@@ -1,0 +1,930 @@
+body {
+  font-family: sans-serif;
+  color: #fff;
+}
+
+#menu{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("menuTlo.png");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+#menu>button{
+  margin: auto;
+  background: #444;
+  color: white;
+  border: dashed black 2px;
+  border-radius: 50px;
+  width: 550px;
+  height: 200px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 100px;
+  transition: background 0.2s;
+}
+
+#collection{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-image: url("menuTlo.png");
+  background-size: cover;
+  width: 400px;
+  height: 600px;
+}
+
+#charScroll{
+  position: absolute;
+  top:50px;
+  left:0px;
+  width:200px;
+  height:550px;
+  background-color: purple;
+}
+
+#charSrcollButtons{
+  background-color: blue;
+  border: solid black 5px;
+  border-radius: 5px;
+  margin: auto;
+  width: 180px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+#charScrollButtons>button {
+  background: grey;
+  width: 45px;
+  height: 45px;
+  border: solid darkgrey 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#charInfo{
+  position: absolute;
+  top:50px;
+  left:200px;
+  width:200px;
+  height:550px;
+  background-color: bisque;
+}
+
+#charFace{
+  margin: auto;
+  width:180px;
+  height:180px;
+  border: solid black 5px;
+  background-color: brown;
+}
+
+#charStats{
+  margin: auto;
+  width:180px;
+  height:370px;
+  border: solid black 5px;
+  background-color: burlywood;
+}
+
+#credits{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-image: url("menuTlo.png");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: black;
+  text-align: center;
+}
+
+#selectMenu{
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: indigo;
+  width: 100vw;
+  height: 100vh;
+}
+
+#cofka1, #cofka2, #cofka3{
+  background-image: url("arrow.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  z-index:1;
+}
+
+#characterSelected{
+  background-color: purple;
+  margin: auto;
+  margin-top: 50px;
+  width: 1600px;
+  height: 100px;
+  border: solid black 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+#characterSelected>div{
+  margin: auto;
+}
+
+#characterSelected>div>button{
+  width: 90px;
+  height: 90px;
+  border: solid black 5px;
+}
+
+#characterImage{
+  background-image: url("characterMenuTlo.jpg");
+  margin: auto;
+  margin-top: -5px;
+  width: 1600px;
+  height: 400px;
+  border: solid black 5px;
+}
+
+#characterButtons{
+  background-color: purple;
+  border: solid black 5px;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 10px;
+  width: 1525px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  gap: 10px;
+}
+
+#characterButtons>button {
+  background: grey;
+  width: 160px;
+  height: 160px;
+  border: solid darkgrey 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#mainGame {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-image:url(Tlo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#pauzaGuz{
+  background-image: url("pauza.png");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 75px;
+  height: 75px;
+  border-radius: 20px;
+}
+
+#pauzaGuz:hover{
+  filter: brightness(1.2);
+}
+
+#scenaPauzy{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  animation: fadeIn 0.5s ease;
+}
+
+#blokPauzy{
+  width: 400px;
+  height: 600px;
+  border: solid black 5px;
+  padding-left: 50px;
+}
+
+#blokPauzy>button{
+  width: 300px;
+  border-radius: 20px;
+  margin: auto;
+}
+
+@keyframes fadeIn {
+  from { transform: scale(1); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }/* sprawdź jak i ile to zmienia bo przyciemnienie jest wyżej jak chcesz zwiększyć */
+}
+
+#poz1{
+  position: absolute;
+  top:200px;
+  left:700px;
+  width:150px;
+  height:150px;
+  background-size: cover;
+}
+
+#który1{
+  position: absolute;
+  top:150px;
+  left:690px;
+  width:25px;
+  height:25px;
+  border: solid black 2px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  color:black;
+  background-color:yellow;
+}
+
+#efektInfo1{
+  position: absolute;
+  top:175px;
+  left:690px;
+  width:25px;
+  height:auto;
+  max-width:25px;
+  border: solid black 2px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  color:black;
+  background-color:honeydew;
+}
+
+#poz1Info{
+  position:absolute;
+  top:165px;
+  left:710px;
+  width:100px;
+  height:25px;
+  border-radius:25px;
+  border: solid black 2px;
+  background-color:white;
+}
+
+#hpBar1{
+  background: red;
+  border-radius: 25px;
+  max-height: 100%;
+  height: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+
+#hpFill1{
+  position: relative;
+  background: green;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#poz2{
+  position: absolute;
+  top:350px;
+  left:550px;
+  width:150px;
+  height:150px;
+  background-size: cover;
+}
+
+#który2{
+  position: absolute;
+  top:300px;
+  left:540px;
+  width:25px;
+  height:25px;
+  border: solid black 2px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  color:black;
+  background-color:yellow;
+}
+
+#poz2Info{
+  position:absolute;
+  top:315px;
+  left:560px;
+  width:100px;
+  height:25px;
+  border-radius:25px;
+  border: solid black 2px;
+  background-color:white;
+}
+
+#hpBar2{
+  background: red;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+}
+
+#hpFill2{
+  background: green;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#poz3{
+  position: absolute;
+  top:500px;
+  left:700px;
+  width:150px;
+  height:150px;
+  background-size: cover;
+}
+
+#który3{
+  position: absolute;
+  top:450px;
+  left:690px;
+  width:25px;
+  height:25px;
+  border: solid black 2px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  color:black;
+  background-color:yellow;
+}
+
+#poz3Info{
+  position:absolute;
+  top:465px;
+  left:710px;
+  width:100px;
+  height:25px;
+  border-radius:25px;
+  border: solid black 2px;
+  background-color:white;
+}
+
+#hpBar3{
+  background: red;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+}
+
+#hpFill3{
+  background: green;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#poz4{
+  position: absolute;
+  top:200px;
+  left:400px;
+  width:150px;
+  height:150px;
+  background-size: cover;
+}
+
+#który4{
+  position: absolute;
+  top:150px;
+  left:390px;
+  width:25px;
+  height:25px;
+  border: solid black 2px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  color:black;
+  background-color:yellow;
+}
+
+#poz4Info{
+  position:absolute;
+  top:165px;
+  left:410px;
+  width:100px;
+  height:25px;
+  border-radius:25px;
+  border: solid black 2px;
+  background-color:white;
+}
+
+#hpBar4{
+  background: red;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+}
+
+#hpFill4{
+  background: green;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#poz5{
+  position: absolute;
+  top:500px;
+  left:400px;
+  width:150px;
+  height:150px;
+  background-size: cover;
+}
+
+#który5{
+  position: absolute;
+  top:450px;
+  left:390px;
+  width:25px;
+  height:25px;
+  border: solid black 2px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  color:black;
+  background-color:yellow;
+}
+
+#poz5Info{
+  position:absolute;
+  top:465px;
+  left:410px;
+  width:100px;
+  height:25px;
+  border-radius:25px;
+  border: solid black 2px;
+  background-color:white;
+}
+
+#hpBar5{
+  background: red;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+}
+
+#hpFill5{
+  background: green;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#poz6{
+  position: absolute;
+  top:200px;
+  left:950px;
+  width:150px;
+  height:150px;
+  background-size: cover;
+}
+
+#który6{
+  position: absolute;
+  top:150px;
+  left:940px;
+  width:25px;
+  height:25px;
+  border: solid black 2px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  color:black;
+  background-color:yellow;
+}
+
+#poz6Info{
+  position:absolute;
+  top:165px;
+  left:960px;
+  width:100px;
+  height:25px;
+  border-radius:25px;
+  border: solid black 2px;
+  background-color:white;
+}
+
+#hpBar6{
+  background: red;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+}
+
+#hpFill6{
+  background: green;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#poz7{
+  position: absolute;
+  top:350px;
+  left:1100px;
+  width:150px;
+  height:150px;
+  background-size: cover;
+}
+
+#który7{
+  position: absolute;
+  top:300px;
+  left:1090px;
+  width:25px;
+  height:25px;
+  border: solid black 2px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  color:black;
+  background-color:yellow;
+}
+
+#poz7Info{
+  position:absolute;
+  top:315px;
+  left:1110px;
+  width:100px;
+  height:25px;
+  border-radius:25px;
+  border: solid black 2px;
+  background-color:white;
+}
+
+#hpBar7{
+  background: red;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+}
+
+#hpFill7{
+  background: green;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#poz8{
+  position: absolute;
+  top:500px;
+  left:950px;
+  width:150px;
+  height:150px;
+  background-size: cover;
+}
+
+#który8{
+  position: absolute;
+  top:450px;
+  left:940px;
+  width:25px;
+  height:25px;
+  border: solid black 2px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  color:black;
+  background-color:yellow;
+}
+
+#poz8Info{
+  position:absolute;
+  top:465px;
+  left:960px;
+  width:100px;
+  height:25px;
+  border-radius:25px;
+  border: solid black 2px;
+  background-color:white;
+}
+
+#hpBar8{
+  background: red;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+}
+
+#hpFill8{
+  background: green;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#poz9{
+  position: absolute;
+  top:200px;
+  left:1300px;
+  width:150px;
+  height:150px;
+  background-size: cover;
+}
+
+#który9{
+  position: absolute;
+  top:150px;
+  left:1290px;
+  width:25px;
+  height:25px;
+  border: solid black 2px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  color:black;
+  background-color:yellow;
+}
+
+#poz9Info{
+  position:absolute;
+  top:165px;
+  left:1310px;
+  width:100px;
+  height:25px;
+  border-radius:25px;
+  border: solid black 2px;
+  background-color:white;
+}
+
+#hpBar9{
+  background: red;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+}
+
+#hpFill9{
+  background: green;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#poz10{
+  position: absolute;
+  top:500px;
+  left:1300px;
+  width:150px;
+  height:150px;
+  background-size: cover;
+}
+
+#który10{
+  position: absolute;
+  top:450px;
+  left:1290px;
+  width:25px;
+  height:25px;
+  border: solid black 2px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  color:black;
+  background-color:yellow;
+}
+
+#poz10Info{
+  position:absolute;
+  top:465px;
+  left:1310px;
+  width:100px;
+  height:25px;
+  border-radius:25px;
+  border: solid black 2px;
+  background-color:white;
+}
+
+#hpBar10{
+  background: red;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+}
+
+#hpFill10{
+  background: green;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#shield1{
+  position: relative;
+  margin-top: -25px;
+  background: aquamarine;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#shield2{
+  position: relative;
+  margin-top: -25px;
+  background: aquamarine;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#shield3{
+  position: relative;
+  margin-top: -25px;
+  background: aquamarine;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#shield4{
+  position: relative;
+  margin-top: -25px;
+  background: aquamarine;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#shield5{
+  position: relative;
+  margin-top: -25px;
+  background: aquamarine;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#shield6{
+  position: relative;
+  margin-top: -25px;
+  background: aquamarine;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#shield7{
+  position: relative;
+  margin-top: -25px;
+  background: aquamarine;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#shield8{
+  position: relative;
+  margin-top: -25px;
+  background: aquamarine;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#shield9{
+  position: relative;
+  margin-top: -25px;
+  background: aquamarine;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#shield10{
+  position: relative;
+  margin-top: -25px;
+  background: aquamarine;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+button {
+  padding: 10px 20px;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #666;
+}
+
+#testodiv{
+  background-color: white;
+  width:100px;
+  height:50px;
+  color:black;
+  float: right;
+}
+
+#testguz{
+  background-color:magenta;
+  float: right;
+  width:50px;
+  height:50px;
+}
+
+#kwadwybierak{
+  position: absolute;
+  top:0px;
+  left:0px;
+  width:150px;
+  height:150px;
+  border:solid blue 2px;
+  background-color: grey;
+  opacity: 0.5;
+}
+
+#skillzestaw{
+  position: absolute;
+  width:100px;
+  height:200px;
+  background-color:black;
+  opacity:0.5;
+  display: none;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(5, auto);
+  gap: 8px;
+  place-items: center;
+}
+
+#skillblock1 { grid-column: 1; grid-row: 2; }
+#skillblock2 { grid-column: 2; grid-row: 1; }
+#skillblock3 { grid-column: 3; grid-row: 2; }
+#energybar { grid-column: 2; grid-row: 3; }
+#skillblock4 { grid-column: 1; grid-row: 4; }
+#skillblock5 { grid-column: 2; grid-row: 5; }
+#skillblock6 { grid-column: 3; grid-row: 4; }
+
+#skillblock1,#skillblock2,#skillblock3,#skillblock4,#skillblock5,#skillblock6{
+  background-color: grey;
+  width:15px;
+  height:15px;
+  border: solid black 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
