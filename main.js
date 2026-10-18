@@ -2868,7 +2868,7 @@ function updateUI(){
     shield10.style.width = `${(postaćPoz10.shield / postaćPoz10.maxhp) * 100}%`;
     efekt11.textContent = postaćPoz1.poison.rounds;
     efekt12.textContent = postaćPoz1.freeze.rounds;
-    efekt13.textContent = postaćPoz1.fire.rounds;
+    efekt13.textContent = postaćPoz1.fire.rounds;//zrób na obrazek na pasku, a po najechaniu pisze ile i na jak długo
     efekt14.textContent = postaćPoz1.pewnyKryt;
     kolejność = kolejność.sort(function(a, b){return a.speed-b.speed}).reverse();//monitoruj tutaj
     for(var j = 0; j<kolejność.length; j++){
