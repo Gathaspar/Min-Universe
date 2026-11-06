@@ -2866,30 +2866,46 @@ function updateUI(){
     shield8.style.width = `${(postaćPoz8.shield / postaćPoz8.maxhp) * 100}%`;
     shield9.style.width = `${(postaćPoz9.shield / postaćPoz9.maxhp) * 100}%`;
     shield10.style.width = `${(postaćPoz10.shield / postaćPoz10.maxhp) * 100}%`;
-    if(postaćPoz1.poison.rounds == 0){
-        efekt11.style.display = "none";
-    }else{
-        efekt11.style.display = "flex";
-        efekt11.textContent = postaćPoz1.poison.rounds;
-    }
-    if(postaćPoz1.freeze.rounds == 0){
-        efekt12.style.display = "none";
-    }else{
-        efekt12.style.display = "flex";
-        efekt12.textContent = postaćPoz1.freeze.rounds;
-    }
-    if(postaćPoz1.fire.rounds == 0){
-        efekt13.style.display = "none";
-    }else{
-        efekt13.style.display = "flex";
-        efekt13.textContent = postaćPoz1.fire.rounds;
-    }
-    if(postaćPoz1.pewnyKryt.rounds == 0){
-        efekt14.style.display = "none";
-    }else{
-        efekt14.style.display = "flex";
-        efekt14.textContent = postaćPoz1.pewnyKryt.rounds;
-    }
+    if(postaćPoz1.poison.rounds == 0){efekt11.style.display = "none";}else{efekt11.style.display = "flex";efekt11.textContent = postaćPoz1.poison.rounds;}
+    if(postaćPoz1.freeze.rounds == 0){efekt12.style.display = "none";}else{efekt12.style.display = "flex";efekt12.textContent = postaćPoz1.freeze.rounds;}
+    if(postaćPoz1.fire.rounds == 0){efekt13.style.display = "none";}else{efekt13.style.display = "flex";efekt13.textContent = postaćPoz1.fire.rounds;}
+    if(postaćPoz1.pewnyKryt.rounds == 0){efekt14.style.display = "none";}else{efekt14.style.display = "flex";efekt14.textContent = postaćPoz1.pewnyKryt.rounds;}
+    if(postaćPoz2.poison.rounds == 0){efekt21.style.display = "none";}else{efekt21.style.display = "flex";efekt21.textContent = postaćPoz2.poison.rounds;}
+    if(postaćPoz2.freeze.rounds == 0){efekt22.style.display = "none";}else{efekt22.style.display = "flex";efekt22.textContent = postaćPoz2.freeze.rounds;}
+    if(postaćPoz2.fire.rounds == 0){efekt23.style.display = "none";}else{efekt23.style.display = "flex";efekt23.textContent = postaćPoz2.fire.rounds;}
+    if(postaćPoz2.pewnyKryt.rounds == 0){efekt24.style.display = "none";}else{efekt24.style.display = "flex";efekt24.textContent = postaćPoz2.pewnyKryt.rounds;}
+    if(postaćPoz3.poison.rounds == 0){efekt31.style.display = "none";}else{efekt31.style.display = "flex";efekt31.textContent = postaćPoz3.poison.rounds;}
+    if(postaćPoz3.freeze.rounds == 0){efekt32.style.display = "none";}else{efekt32.style.display = "flex";efekt32.textContent = postaćPoz3.freeze.rounds;}
+    if(postaćPoz3.fire.rounds == 0){efekt33.style.display = "none";}else{efekt33.style.display = "flex";efekt33.textContent = postaćPoz3.fire.rounds;}
+    if(postaćPoz3.pewnyKryt.rounds == 0){efekt34.style.display = "none";}else{efekt34.style.display = "flex";efekt34.textContent = postaćPoz3.pewnyKryt.rounds;}
+    if(postaćPoz4.poison.rounds == 0){efekt41.style.display = "none";}else{efekt41.style.display = "flex";efekt41.textContent = postaćPoz4.poison.rounds;}
+    if(postaćPoz4.freeze.rounds == 0){efekt42.style.display = "none";}else{efekt42.style.display = "flex";efekt42.textContent = postaćPoz4.freeze.rounds;}
+    if(postaćPoz4.fire.rounds == 0){efekt43.style.display = "none";}else{efekt43.style.display = "flex";efekt43.textContent = postaćPoz4.fire.rounds;}
+    if(postaćPoz4.pewnyKryt.rounds == 0){efekt44.style.display = "none";}else{efekt44.style.display = "flex";efekt44.textContent = postaćPoz4.pewnyKryt.rounds;}
+    if(postaćPoz5.poison.rounds == 0){efekt51.style.display = "none";}else{efekt51.style.display = "flex";efekt51.textContent = postaćPoz5.poison.rounds;}
+    if(postaćPoz5.freeze.rounds == 0){efekt52.style.display = "none";}else{efekt52.style.display = "flex";efekt52.textContent = postaćPoz5.freeze.rounds;}
+    if(postaćPoz5.fire.rounds == 0){efekt53.style.display = "none";}else{efekt53.style.display = "flex";efekt53.textContent = postaćPoz5.fire.rounds;}
+    if(postaćPoz5.pewnyKryt.rounds == 0){efekt54.style.display = "none";}else{efekt54.style.display = "flex";efekt54.textContent = postaćPoz5.pewnyKryt.rounds;}
+    if(postaćPoz6.poison.rounds == 0){efekt61.style.display = "none";}else{efekt61.style.display = "flex";efekt61.textContent = postaćPoz6.poison.rounds;}
+    if(postaćPoz6.freeze.rounds == 0){efekt62.style.display = "none";}else{efekt62.style.display = "flex";efekt62.textContent = postaćPoz6.freeze.rounds;}
+    if(postaćPoz6.fire.rounds == 0){efekt63.style.display = "none";}else{efekt63.style.display = "flex";efekt63.textContent = postaćPoz6.fire.rounds;}
+    if(postaćPoz6.pewnyKryt.rounds == 0){efekt64.style.display = "none";}else{efekt64.style.display = "flex";efekt64.textContent = postaćPoz6.pewnyKryt.rounds;}
+    if(postaćPoz7.poison.rounds == 0){efekt71.style.display = "none";}else{efekt71.style.display = "flex";efekt71.textContent = postaćPoz7.poison.rounds;}
+    if(postaćPoz7.freeze.rounds == 0){efekt72.style.display = "none";}else{efekt72.style.display = "flex";efekt72.textContent = postaćPoz7.freeze.rounds;}
+    if(postaćPoz7.fire.rounds == 0){efekt73.style.display = "none";}else{efekt73.style.display = "flex";efekt73.textContent = postaćPoz7.fire.rounds;}
+    if(postaćPoz7.pewnyKryt.rounds == 0){efekt74.style.display = "none";}else{efekt74.style.display = "flex";efekt74.textContent = postaćPoz7.pewnyKryt.rounds;}
+    if(postaćPoz8.poison.rounds == 0){efekt81.style.display = "none";}else{efekt81.style.display = "flex";efekt81.textContent = postaćPoz8.poison.rounds;}
+    if(postaćPoz8.freeze.rounds == 0){efekt82.style.display = "none";}else{efekt82.style.display = "flex";efekt82.textContent = postaćPoz8.freeze.rounds;}
+    if(postaćPoz8.fire.rounds == 0){efekt83.style.display = "none";}else{efekt83.style.display = "flex";efekt83.textContent = postaćPoz8.fire.rounds;}
+    if(postaćPoz8.pewnyKryt.rounds == 0){efekt84.style.display = "none";}else{efekt84.style.display = "flex";efekt84.textContent = postaćPoz8.pewnyKryt.rounds;}
+    if(postaćPoz9.poison.rounds == 0){efekt91.style.display = "none";}else{efekt91.style.display = "flex";efekt91.textContent = postaćPoz9.poison.rounds;}
+    if(postaćPoz9.freeze.rounds == 0){efekt92.style.display = "none";}else{efekt92.style.display = "flex";efekt92.textContent = postaćPoz9.freeze.rounds;}
+    if(postaćPoz9.fire.rounds == 0){efekt93.style.display = "none";}else{efekt93.style.display = "flex";efekt93.textContent = postaćPoz9.fire.rounds;}
+    if(postaćPoz9.pewnyKryt.rounds == 0){efekt94.style.display = "none";}else{efekt94.style.display = "flex";efekt94.textContent = postaćPoz9.pewnyKryt.rounds;}
+    if(postaćPoz10.poison.rounds == 0){efekt101.style.display = "none";}else{efekt101.style.display = "flex";efekt101.textContent = postaćPoz10.poison.rounds;}
+    if(postaćPoz10.freeze.rounds == 0){efekt102.style.display = "none";}else{efekt102.style.display = "flex";efekt102.textContent = postaćPoz10.freeze.rounds;}
+    if(postaćPoz10.fire.rounds == 0){efekt103.style.display = "none";}else{efekt103.style.display = "flex";efekt103.textContent = postaćPoz10.fire.rounds;}
+    if(postaćPoz10.pewnyKryt.rounds == 0){efekt104.style.display = "none";}else{efekt104.style.display = "flex";efekt104.textContent = postaćPoz10.pewnyKryt.rounds;}
     kolejność = kolejność.sort(function(a, b){return a.speed-b.speed}).reverse();//monitoruj tutaj
     for(var j = 0; j<kolejność.length; j++){
         kolejność[j].który.innerHTML = j+1;//to wszystko niżej jest po to, żeby za każdym razem wyświetliło dobrze skille i kolejność w cyfrach
