@@ -85,7 +85,7 @@ var Granat = {
     energy:100,
     alive:true,
     element:["earth","ice","fire"],
-    face:"url('Granat.png')",
+    face:"url('images/characters/Granat.png')",
     couldown1:0,
     couldown2:0,
     couldown3:0,
@@ -164,7 +164,7 @@ var Ametyst = {
     energy:100,
     alive:true,
     element:["earth"],
-    face:"url('Ametyst.png')",
+    face:"url('images/characters/Ametyst.png')",
     couldown1:0,
     couldown2:0,
     couldown3:0,
@@ -226,7 +226,7 @@ var Perła = {
     energy:100,
     alive:true,
     element:["earth"],
-    face:"url('Perła.png')",
+    face:"url('images/characters/Perła.png')",
     couldown1:0,
     couldown2:0,
     couldown3:0,
@@ -287,7 +287,7 @@ var Holoperła = {
     energy:100,
     alive:true,
     element:["earth"],
-    face:"url('Perła.png')",
+    face:"url('images/characters/Perła.png')",
     couldown1:0,
     couldown2:0,
     couldown3:0,
@@ -332,7 +332,7 @@ var Greg = {
     energy:100,
     alive:true,
     element:["normal"],
-    face:"url('Greg.png')",
+    face:"url('images/characters/Greg.png')",
     couldown1:0,
     couldown2:0,
     couldown3:0,
@@ -402,7 +402,7 @@ var Connie = {
     energy:100,
     alive:true,
     element:["normal"],
-    face:"url('Connie.png')",
+    face:"url('images/characters/Connie.png')",
     couldown1:0,
     couldown2:0,
     couldown3:0,
@@ -462,7 +462,7 @@ var Lapis = {
     energy:100,
     alive:true,
     element:["earth","water","ice"],
-    face:"url('Lapis.png')",
+    face:"url('images/characters/Lapis.png')",
     couldown1:0,
     couldown2:0,
     couldown3:0,
@@ -532,7 +532,7 @@ var Hydromimik = {
     energy:100,
     alive:true,
     element:["earth","water","ice"],
-    face:"url('Perła.png')",
+    face:"url('images/characters/Perła.png')",
     couldown1:0,
     couldown2:0,
     couldown3:0,
@@ -594,7 +594,7 @@ var Perydot = {
     energy:100,
     alive:true,
     element:["earth","robot"],
-    face:"url('Perydot.png')",
+    face:"url('images/characters/Perydot.png')",
     couldown1:0,
     couldown2:0,
     couldown3:0,
@@ -664,7 +664,7 @@ var Jaspis = {
     energy:100,
     alive:true,
     element:["earth"],
-    face:"url('Jaspis.png')",
+    face:"url('images/characters/Jaspis.png')",
     couldown1:0,
     couldown2:0,
     couldown3:0,
@@ -725,7 +725,7 @@ var Bizmut = {
     energy:100,
     alive:true,
     element:["earth"],
-    face:"url('Bizmut.png')",
+    face:"url('images/characters/Bizmut.png')",
     couldown1:0,
     couldown2:0,
     couldown3:0,
@@ -1822,7 +1822,7 @@ skillblock1.addEventListener("click", () => {
         if(wybrany.energy >= wybrany.skills.skill1.energyNeeded){
             wybrany.energy = wybrany.energy - wybrany.skills.skill1.energyNeeded;
             wybrany.couldown1 = wybrany.skills.skill1.couldown;
-            akcja = kolejność[i].skills.skill1;//wyświetlanie statusów typu dota i inne
+            akcja = kolejność[i].skills.skill1;
             skillzestaw.style.display = "none";
             if(akcja.type === "selfheal"){
                 if(Math.random() < 0.1 || wybrany.pewnyKryt === true){
@@ -2581,7 +2581,7 @@ function cyklGry(){
                             }
                             wybrany.speed = wybrany.speed + 60;
                         }
-                    }else{
+                    }else{//góra to kryt, a dół bezkryt
                         if(akcja.type === "atak"){
                             if(akcja.targets[j].shield === 0){
                                 akcja.targets[j].hp = (akcja.targets[j].hp - akcja.value*multi);
@@ -2866,7 +2866,12 @@ function updateUI(){
     shield8.style.width = `${(postaćPoz8.shield / postaćPoz8.maxhp) * 100}%`;
     shield9.style.width = `${(postaćPoz9.shield / postaćPoz9.maxhp) * 100}%`;
     shield10.style.width = `${(postaćPoz10.shield / postaćPoz10.maxhp) * 100}%`;
-    efekt11.textContent = postaćPoz1.poison.rounds;
+    if(postaćPoz1.poison.rounds == 0){
+        efekt11.style.display = "none";
+    }else{
+        efekt11.style.display = "flex";
+        efekt11.textContent = postaćPoz1.poison.rounds;
+    }
     efekt12.textContent = postaćPoz1.freeze.rounds;
     efekt13.textContent = postaćPoz1.fire.rounds;//zrób na obrazek na pasku, a po najechaniu pisze ile i na jak długo
     efekt14.textContent = postaćPoz1.pewnyKryt;
