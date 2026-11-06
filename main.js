@@ -2872,45 +2872,24 @@ function updateUI(){
         efekt11.style.display = "flex";
         efekt11.textContent = postaćPoz1.poison.rounds;
     }
-    efekt12.textContent = postaćPoz1.freeze.rounds;
-    efekt13.textContent = postaćPoz1.fire.rounds;//zrób na obrazek na pasku, a po najechaniu pisze ile i na jak długo
-    efekt14.textContent = postaćPoz1.pewnyKryt;
-    efekt21.textContent = postaćPoz2.poison.rounds;
-    efekt22.textContent = postaćPoz2.freeze.rounds;
-    efekt23.textContent = postaćPoz2.fire.rounds;
-    efekt24.textContent = postaćPoz2.pewnyKryt;
-    efekt31.textContent = postaćPoz3.poison.rounds;
-    efekt32.textContent = postaćPoz3.freeze.rounds;
-    efekt33.textContent = postaćPoz3.fire.rounds;
-    efekt34.textContent = postaćPoz3.pewnyKryt;
-    efekt41.textContent = postaćPoz4.poison.rounds;
-    efekt42.textContent = postaćPoz4.freeze.rounds;
-    efekt43.textContent = postaćPoz4.fire.rounds;
-    efekt44.textContent = postaćPoz4.pewnyKryt;
-    efekt51.textContent = postaćPoz5.poison.rounds;
-    efekt52.textContent = postaćPoz5.freeze.rounds;
-    efekt53.textContent = postaćPoz5.fire.rounds;
-    efekt54.textContent = postaćPoz5.pewnyKryt;
-    efekt61.textContent = postaćPoz6.poison.rounds;
-    efekt62.textContent = postaćPoz6.freeze.rounds;
-    efekt63.textContent = postaćPoz6.fire.rounds;
-    efekt64.textContent = postaćPoz6.pewnyKryt;
-    efekt71.textContent = postaćPoz7.poison.rounds;
-    efekt72.textContent = postaćPoz7.freeze.rounds;
-    efekt73.textContent = postaćPoz7.fire.rounds;
-    efekt74.textContent = postaćPoz7.pewnyKryt;
-    efekt81.textContent = postaćPoz8.poison.rounds;
-    efekt82.textContent = postaćPoz8.freeze.rounds;
-    efekt83.textContent = postaćPoz8.fire.rounds;
-    efekt84.textContent = postaćPoz8.pewnyKryt;
-    efekt91.textContent = postaćPoz9.poison.rounds;
-    efekt92.textContent = postaćPoz9.freeze.rounds;
-    efekt93.textContent = postaćPoz9.fire.rounds;
-    efekt94.textContent = postaćPoz9.pewnyKryt;
-    efekt101.textContent = postaćPoz10.poison.rounds;
-    efekt102.textContent = postaćPoz10.freeze.rounds;
-    efekt103.textContent = postaćPoz10.fire.rounds;
-    efekt104.textContent = postaćPoz10.pewnyKryt;
+    if(postaćPoz1.freeze.rounds == 0){
+        efekt12.style.display = "none";
+    }else{
+        efekt12.style.display = "flex";
+        efekt12.textContent = postaćPoz1.freeze.rounds;
+    }
+    if(postaćPoz1.fire.rounds == 0){
+        efekt13.style.display = "none";
+    }else{
+        efekt13.style.display = "flex";
+        efekt13.textContent = postaćPoz1.fire.rounds;
+    }
+    if(postaćPoz1.pewnyKryt.rounds == 0){
+        efekt14.style.display = "none";
+    }else{
+        efekt14.style.display = "flex";
+        efekt14.textContent = postaćPoz1.pewnyKryt.rounds;
+    }
     kolejność = kolejność.sort(function(a, b){return a.speed-b.speed}).reverse();//monitoruj tutaj
     for(var j = 0; j<kolejność.length; j++){
         kolejność[j].który.innerHTML = j+1;//to wszystko niżej jest po to, żeby za każdym razem wyświetliło dobrze skille i kolejność w cyfrach
