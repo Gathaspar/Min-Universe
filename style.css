@@ -9,7 +9,7 @@ body {
   left: 0px;
   display: flex;
   flex-direction: column;
-  background-image: url("menuTlo.png");
+  background-image: url("images/system_UI/menuTlo.png");
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -34,7 +34,7 @@ body {
   top: 0px;
   left: 0px;
   display: none;
-  background-image: url("menuTlo.png");
+  background-image: url("images/system_UI/menuTlo.png");
   background-size: cover;
   width: 400px;
   height: 600px;
@@ -99,7 +99,7 @@ body {
   top: 0px;
   left: 0px;
   display: none;
-  background-image: url("menuTlo.png");
+  background-image: url("images/system_UI/menuTlo.png");
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -118,7 +118,7 @@ body {
 }
 
 #cofka1, #cofka2, #cofka3{
-  background-image: url("arrow.jpg");
+  background-image: url("images/system_UI/arrow.jpg");
   background-size: cover;
   position: absolute;
   top: 0px;
@@ -151,7 +151,7 @@ body {
 }
 
 #characterImage{
-  background-image: url("characterMenuTlo.jpg");
+  background-image: url("images/system_UI/characterMenuTlo.jpg");
   margin: auto;
   margin-top: -5px;
   width: 1600px;
@@ -194,7 +194,7 @@ body {
 }
 
 #pauzaGuz{
-  background-image: url("pauza.png");
+  background-image: url("images/system_UI/pauza.png");
   background-size: cover;
   position: absolute;
   top: 0px;
