@@ -7,7 +7,7 @@ var StevenUniverse = {
     energy:100,
     alive:true,
     element:["normal"],
-    face:"url('images\characters\StevenUniverse.png')",
+    face:"url('images/characters/StevenUniverse.png')",
     facewybrany:"można to zrobić zamiast opacity kiedyś",
     couldown1:0,
     couldown2:0,
