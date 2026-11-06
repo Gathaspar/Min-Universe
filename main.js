@@ -2870,7 +2870,7 @@ function updateUI(){
         efekt11.style.display = "none";
     }else{
         efekt11.style.display = "flex";
-        efekt11.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
+        efekt11.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';//rozkmiń te obrazki
     }
     if(postaćPoz1.freeze.rounds == 0){
         efekt12.style.display = "none";
