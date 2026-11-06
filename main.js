@@ -2867,9 +2867,9 @@ function updateUI(){
     shield9.style.width = `${(postaćPoz9.shield / postaćPoz9.maxhp) * 100}%`;
     shield10.style.width = `${(postaćPoz10.shield / postaćPoz10.maxhp) * 100}%`;
     if(postaćPoz1.poison.rounds == 0){efekt11.style.display = "none";}else{efekt11.style.display = "flex";efekt11.style.backgroundImage = url("images/skill_icon/poisonTooth.png");}
-    if(postaćPoz1.freeze.rounds == 0){efekt12.style.display = "none";}else{efekt12.style.display = "flex";efekt12.textContent = url("images/skill_icon/icyBlast.png");}
-    if(postaćPoz1.fire.rounds == 0){efekt13.style.display = "none";}else{efekt13.style.display = "flex";efekt13.textContent = url("images/skill_icon/burn.png");}
-    if(postaćPoz1.pewnyKryt == false){efekt14.style.display = "none";}else{efekt14.style.display = "flex";efekt14.textContent = url("images/skill_icon/persaverance.png");}
+    if(postaćPoz1.freeze.rounds == 0){efekt12.style.display = "none";}else{efekt12.style.display = "flex";efekt12.style.backgroundImage = url("images/skill_icon/icyBlast.png");}
+    if(postaćPoz1.fire.rounds == 0){efekt13.style.display = "none";}else{efekt13.style.display = "flex";efekt13.style.backgroundImage = url("images/skill_icon/burn.png");}
+    if(postaćPoz1.pewnyKryt == false){efekt14.style.display = "none";}else{efekt14.style.display = "flex";efekt14.style.backgroundImage = url("images/skill_icon/persaverance.png");}
     if(postaćPoz2.poison.rounds == 0){efekt21.style.display = "none";}else{efekt21.style.display = "flex";efekt21.textContent = postaćPoz2.poison.rounds;}
     if(postaćPoz2.freeze.rounds == 0){efekt22.style.display = "none";}else{efekt22.style.display = "flex";efekt22.textContent = postaćPoz2.freeze.rounds;}
     if(postaćPoz2.fire.rounds == 0){efekt23.style.display = "none";}else{efekt23.style.display = "flex";efekt23.textContent = postaćPoz2.fire.rounds;}
