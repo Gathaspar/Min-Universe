@@ -2866,30 +2866,6 @@ function updateUI(){
     shield8.style.width = `${(postaćPoz8.shield / postaćPoz8.maxhp) * 100}%`;
     shield9.style.width = `${(postaćPoz9.shield / postaćPoz9.maxhp) * 100}%`;
     shield10.style.width = `${(postaćPoz10.shield / postaćPoz10.maxhp) * 100}%`;
-    if(postaćPoz1.poison.rounds == 0){
-        efekt11.style.display = "none";
-    }else{
-        efekt11.style.display = "flex";
-        efekt11.style.backgroundImage = url("images/skill_icon/poisonTooth.png");
-    }
-    if(postaćPoz1.freeze.rounds == 0){
-        efekt12.style.display = "none";
-    }else{
-        efekt12.style.display = "flex";
-        efekt12.style.backgroundImage = url("images/skill_icon/icyBlast.png");
-    }
-    if(postaćPoz1.fire.rounds == 0){
-        efekt13.style.display = "none";
-    }else{
-        efekt13.style.display = "flex";
-        efekt13.style.backgroundImage = url("images/skill_icon/burn.png");
-    }
-    if(postaćPoz1.pewnyKryt == false){
-        efekt14.style.display = "none";
-    }else{
-        efekt14.style.display = "flex";
-        efekt14.style.backgroundImage = url("images/skill_icon/persaverance.png");
-    }
     
     kolejność = kolejność.sort(function(a, b){return a.speed-b.speed}).reverse();//monitoruj tutaj
     for(var j = 0; j<kolejność.length; j++){
