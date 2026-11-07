@@ -1003,6 +1003,12 @@ body {
   transition: width 0.3s;
 }
 
+#efekt11, #efekt12, #efekt13, #efekt14, #efekt21, #efekt22, #efekt23, #efekt24, #efekt31, #efekt32, #efekt33, #efekt34, #efekt41, #efekt42, #efekt43, #efekt44, #efekt51, #efekt52, #efekt53, #efekt54, #efekt61, #efekt62, #efekt63, #efekt64, #efekt71, #efekt72, #efekt73, #efekt74, #efekt81, #efekt82, #efekt83, #efekt84, #efekt91, #efekt92, #efekt93, #efekt94, #efekt101, #efekt102, #efekt103, #efekt104{
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+}
+
 button {
   padding: 10px 20px;
   background: #444;
