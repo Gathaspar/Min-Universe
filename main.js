@@ -1750,7 +1750,7 @@ var shield9 = document.getElementById("shield9");
 var shield10 = document.getElementById("shield10");
 
 var kolejność
-var wybrany
+var wybrany//sprawdź wielokrotnego freeza, pierwsza postać stoi, a druga jedzie mimo freeza
 var i = 0
 function tura(){
     if(wybrany.couldown1 > 0){//w update ui zrób, że jeżeli couldown obecnyych ładowanych skillów jest nie zero to wtedy obrazki mają opacity na 0.5 lub obrazki z cyfrą
