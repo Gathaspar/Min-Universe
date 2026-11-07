@@ -2936,25 +2936,30 @@ function updateUI(){
         skillblock2.style.display = "none";
     }else{
         skillblock2.style.display = "block";
+        skillblock2.style.backgroundImage = kolejność[i].skills.skill2.face;
     }
     if(kolejność[i].skills.skill3 == null){
         skillblock3.style.display = "none";
     }else{
         skillblock3.style.display = "block";
+        skillblock3.style.backgroundImage = kolejność[i].skills.skill3.face;
     }
     if(kolejność[i].skills.skill4 == null){
         skillblock4.style.display = "none";
     }else{
         skillblock4.style.display = "block";
+        skillblock4.style.backgroundImage = kolejność[i].skills.skill4.face;
     }
     if(kolejność[i].skills.skill5 == null){
         skillblock5.style.display = "none";
     }else{
         skillblock5.style.display = "block";
+        skillblock5.style.backgroundImage = kolejność[i].skills.skill5.face;
     }
     if(kolejność[i].skills.skill6 == null){
         skillblock6.style.display = "none";
     }else{
         skillblock6.style.display = "block";
+        skillblock6.style.backgroundImage = kolejność[i].skills.skill6.face;
     }
 }
