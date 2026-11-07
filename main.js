@@ -2867,6 +2867,15 @@ function updateUI(){
     shield9.style.width = `${(postaćPoz9.shield / postaćPoz9.maxhp) * 100}%`;//napraw prędkość, w sensie że nie może być taka sama bo się pierdoli
     shield10.style.width = `${(postaćPoz10.shield / postaćPoz10.maxhp) * 100}%`;
     if(postaćPoz1.poison.rounds == 0 && postaćPoz1.freeze.rounds == 0 && postaćPoz1.fire.rounds == 0 && postaćPoz1.pewnyKryt == false){efektInfo1.style.display = "none"}else{efektInfo1.style.display = "flex"}
+    if(postaćPoz2.poison.rounds == 0 && postaćPoz2.freeze.rounds == 0 && postaćPoz2.fire.rounds == 0 && postaćPoz2.pewnyKryt == false){efektInfo2.style.display = "none"}else{efektInfo2.style.display = "flex"}
+    if(postaćPoz3.poison.rounds == 0 && postaćPoz3.freeze.rounds == 0 && postaćPoz3.fire.rounds == 0 && postaćPoz3.pewnyKryt == false){efektInfo3.style.display = "none"}else{efektInfo3.style.display = "flex"}
+    if(postaćPoz4.poison.rounds == 0 && postaćPoz4.freeze.rounds == 0 && postaćPoz4.fire.rounds == 0 && postaćPoz4.pewnyKryt == false){efektInfo4.style.display = "none"}else{efektInfo4.style.display = "flex"}
+    if(postaćPoz5.poison.rounds == 0 && postaćPoz5.freeze.rounds == 0 && postaćPoz5.fire.rounds == 0 && postaćPoz5.pewnyKryt == false){efektInfo5.style.display = "none"}else{efektInfo5.style.display = "flex"}
+    if(postaćPoz6.poison.rounds == 0 && postaćPoz6.freeze.rounds == 0 && postaćPoz6.fire.rounds == 0 && postaćPoz6.pewnyKryt == false){efektInfo6.style.display = "none"}else{efektInfo6.style.display = "flex"}
+    if(postaćPoz7.poison.rounds == 0 && postaćPoz7.freeze.rounds == 0 && postaćPoz7.fire.rounds == 0 && postaćPoz7.pewnyKryt == false){efektInfo7.style.display = "none"}else{efektInfo7.style.display = "flex"}
+    if(postaćPoz8.poison.rounds == 0 && postaćPoz8.freeze.rounds == 0 && postaćPoz8.fire.rounds == 0 && postaćPoz8.pewnyKryt == false){efektInfo8.style.display = "none"}else{efektInfo8.style.display = "flex"}
+    if(postaćPoz9.poison.rounds == 0 && postaćPoz9.freeze.rounds == 0 && postaćPoz9.fire.rounds == 0 && postaćPoz9.pewnyKryt == false){efektInfo9.style.display = "none"}else{efektInfo9.style.display = "flex"}
+    if(postaćPoz10.poison.rounds == 0 && postaćPoz10.freeze.rounds == 0 && postaćPoz10.fire.rounds == 0 && postaćPoz10.pewnyKryt == false){efektInfo10.style.display = "none"}else{efektInfo10.style.display = "flex"}
     if (postaćPoz1.poison.rounds == 0) { efekt11.style.display = 'none'; } else { efekt11.style.display = 'flex'; efekt11.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")'; }
     if (postaćPoz1.freeze.rounds == 0) { efekt12.style.display = 'none'; } else { efekt12.style.display = 'flex'; efekt12.style.backgroundImage = 'url("images/skill_icon/icyBlast.png")'; }
     if (postaćPoz1.fire.rounds == 0) { efekt13.style.display = 'none'; } else { efekt13.style.display = 'flex'; efekt13.style.backgroundImage = 'url("images/skill_icon/burn.png")'; }
