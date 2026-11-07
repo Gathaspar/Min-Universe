@@ -40,6 +40,7 @@ var StevenUniverse = {
         },
         skill2: {
             nazwa: "Regeneracja",
+            face: "url('images/skill_icon/holyLight.png')",
             type: "selfheal",
             targetsNeeded: 1,
             targets: [],
@@ -49,6 +50,7 @@ var StevenUniverse = {
         },
         skill3: {
             nazwa: "Bańka",
+            face: "url('images/skill_icon/iceShield.png')",
             type: "selfshield",
             targetsNeeded: 1,
             targets: [],
@@ -58,6 +60,7 @@ var StevenUniverse = {
         },
         skill4: {
             nazwa: "Lecznicza ślina",
+            face: "url('images/skill_icon/hope.png')",
             type: "heal",
             targetsNeeded: 2,
             targets: [],
@@ -67,6 +70,7 @@ var StevenUniverse = {
         },
         skill5: {
             nazwa: "Osłona",
+            face: "url('images/skill_icon/iceBarrier.png')",
             type: "shield",
             targetsNeeded: 2,
             targets: [],
@@ -108,6 +112,7 @@ var Granat = {
     skills: {
         skill1: {
             nazwa: "Uderzenie pięścią",
+            face: "url('images/skill_icon/fireBash.png')",
             type: "atak",
             targetsNeeded: 1,
             targets: [],
@@ -117,6 +122,7 @@ var Granat = {
         },
         skill2:{
             nazwa: "Gniew Szafir",
+            face: "url('images/skill_icon/icyBlast.png')",
             type: "freeze",
             targetsNeeded: 1,
             targets: [],
@@ -127,6 +133,7 @@ var Granat = {
         },
         skill3:{
             nazwa: "Gniew Rubin",
+            face: "url('images/skill_icon/fireBlast.png')",
             type: "fire",
             targetsNeeded: 1,
             targets: [],
@@ -187,6 +194,7 @@ var Ametyst = {
     skills: {
         skill1: {
             nazwa: "Siekanie",
+            face: "url('images/skill_icon/righteousFate.png')",
             type: "atak",
             targetsNeeded: 1,
             targets: [],
@@ -196,6 +204,7 @@ var Ametyst = {
         },
         skill2:{
             nazwa: "Naładowany bicz",
+            face: "url('images/skill_icon/batchBolt.png')",
             type: "atakObszarówka",
             targetsNeeded: 1,
             targets: [],
@@ -206,6 +215,7 @@ var Ametyst = {
         },
         skill3:{
             nazwa: "Obracający pocisk",
+            face: "url('images/skill_icon/recklessDash.png')",
             type: "atak+speed",
             targetsNeeded: 1,
             targets: [],
@@ -249,6 +259,7 @@ var Perła = {
     skills: {
         skill1: {
             nazwa: "Cięcie włócznią",
+            face: "url('images/skill_icon/wildLance.png')",
             type: "atak",
             targetsNeeded: 1,
             targets: [],
@@ -258,6 +269,7 @@ var Perła = {
         },
         skill2:{
             nazwa: "Wiązka energii",
+            face: "url('images/skill_icon/penance.png')",
             type: "atak",
             targetsNeeded: 1,
             targets: [],
@@ -267,6 +279,7 @@ var Perła = {
         },
         skill3:{
             nazwa: "Holo-perła",//wstawia holoperły wszędzie gdzie ktoś zginął, nowe kolejki, nie możesz wygrać mając same holoperły
+            face: "url('images/skill_icon/holyLight.png')",
             type: "summon",
             targetsNeeded: 1,
             targets: [],
@@ -355,6 +368,7 @@ var Greg = {
     skills: {
         skill1: {
             nazwa: "Heavy Metal",
+            face: "url('images/skill_icon/oreDrill.png')",
             type: "atak",
             targetsNeeded: 1,
             targets: [],
@@ -364,7 +378,8 @@ var Greg = {
         },
         skill2:{
             nazwa: "Hard Rock",
-            type: "freeze",
+            face: "url('images/skill_icon/stun.png')",
+            type: "freeze",//zamień to na stun, bo obrazek będzie lodowy
             targetsNeeded: 2,
             targets: [],
             value: 0,
@@ -374,6 +389,7 @@ var Greg = {
         },
         skill3:{
             nazwa: "Ambient ukulele",
+            face: "url('images/skill_icon/serenity.png')",
             type: "healObszarówka",
             targetsNeeded: 1,//trzeba raz kliknąć, nie unikniesz
             targets: [],
@@ -383,6 +399,7 @@ var Greg = {
         },
         skill4:{
             nazwa: "Wild Country",
+            face: "url('images/skill_icon/agility.png')",
             type: "speedObszarówka",//celowane moce pojedynczo krytują, a obszarówki raz dla wszystkich albo raz dla nikogo
             targetsNeeded: 1,
             targets: [],
@@ -425,6 +442,7 @@ var Connie = {
     skills: {
         skill1: {
             nazwa: "Siekanie",
+            face: "url('images/skill_icon/grassBlade.png')",
             type: "atak",
             targetsNeeded: 2,
             targets: [],
@@ -434,6 +452,7 @@ var Connie = {
         },
         skill2:{
             nazwa: "Precyzyjny atak",
+            face: "url('images/skill_icon/crusade.png')",
             type: "atak",
             targetsNeeded: 1,
             targets: [],
@@ -443,6 +462,7 @@ var Connie = {
         },
         skill3:{
             nazwa: "Idealny moment",
+            face: "url('images/skill_icon/persaverance.png')",
             type: "selfPewnyKryt",
             targetsNeeded: 1,
             targets: [],
@@ -485,6 +505,7 @@ var Lapis = {
     skills: {
         skill1: {
             nazwa: "Tnąca fala",
+            face: "url('images/skill_icon/refreshingWave.png')",
             type: "atak",
             targetsNeeded: 3,
             targets: [],
@@ -494,6 +515,7 @@ var Lapis = {
         },
         skill2:{
             nazwa: "Śnieżyca",
+            face: "url('images/skill_icon/sleet.png')",
             type: "freeze",
             targetsNeeded: 3,
             targets: [],
@@ -504,6 +526,7 @@ var Lapis = {
         },
         skill3:{
             nazwa: "Strumień nieba",
+            face: "url('images/skill_icon/waterJet.png')",
             type: "atak+speed",
             targetsNeeded: 1,
             targets: [],
@@ -513,6 +536,7 @@ var Lapis = {
         },
         skill4:{
             nazwa: "Hydromimik",
+            face: "url('images/skill_icon/holyLight.png')",
             type: "summon",
             targetsNeeded: 1,
             targets: [],
@@ -617,6 +641,7 @@ var Perydot = {
     skills: {
         skill1: {
             nazwa: "Blaster Perydot",
+            face: "url('images/skill_icon/deathCall.png')",
             type: "atak",
             targetsNeeded: 1,
             targets: [],
@@ -626,6 +651,7 @@ var Perydot = {
         },
         skill2:{
             nazwa: "Naprawa",
+            face: "url('images/skill_icon/metalMold.png')",
             type: "selfMaxHeal",
             targetsNeeded: 1,
             targets: [],
@@ -635,6 +661,7 @@ var Perydot = {
         },
         skill3:{
             nazwa: "Granat energetyczny",
+            face: "url('images/skill_icon/overload.png')",
             type: "atakObszarówka",
             targetsNeeded: 1,
             targets: [],
@@ -645,6 +672,7 @@ var Perydot = {
         },
         skill4:{
             nazwa: "Pole siłowe",
+            face: "url('images/skill_icon/metalShield.png')",
             type: "selfshield",
             targetsNeeded: 1,
             targets: [],
@@ -687,6 +715,7 @@ var Jaspis = {
     skills: {
         skill1: {
             nazwa: "Kula zniszczenia",//zrób jej dużo życia
+            face: "url('images/skill_icon/piercingCharge.png')",
             type: "atak",
             targetsNeeded: 1,
             targets: [],
@@ -696,6 +725,7 @@ var Jaspis = {
         },
         skill2:{
             nazwa: "Naładowana kometa",
+            face: "url('images/skill_icon/meteorStrike.png')",
             type: "atak",
             targetsNeeded: 1,
             targets: [],
@@ -705,6 +735,7 @@ var Jaspis = {
         },
         skill3:{
             nazwa: "Opancerzenie",
+            face: "url('images/skill_icon/platinum.png')",
             type: "selfshield",
             targetsNeeded: 1,
             targets: [],
@@ -748,6 +779,7 @@ var Bizmut = {
     skills: {
         skill1: {
             nazwa: "Młot i kowadło",
+            face: "url('images/skill_icon/titanSlam.png')",
             type: "atak",
             targetsNeeded: 2,
             targets: [],
@@ -757,6 +789,7 @@ var Bizmut = {
         },
         skill2:{
             nazwa: "Ulepszenie ekwipunku",
+            face: "url('images/skill_icon/persaverance.png')",
             type: "pewnyKryt",
             targetsNeeded: 2,
             targets: [],
