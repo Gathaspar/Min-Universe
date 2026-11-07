@@ -30,6 +30,7 @@ var StevenUniverse = {
     skills: {
         skill1: {
             nazwa: "Rzut Tarczą",
+            face: "url('images/skill_icon/rockSkin.png')",
             type: "atak",
             targetsNeeded: 2,//może kiedyś 1 i rykoszet
             targets: [],
@@ -2929,6 +2930,7 @@ function updateUI(){
         skillblock1.style.display = "none";
     }else{
         skillblock1.style.display = "block";
+        skillblock1.style.backgroundImage = kolejność[i].skills.skill1.face;
     }
     if(kolejność[i].skills.skill2 == null){
         skillblock2.style.display = "none";
