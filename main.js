@@ -145,6 +145,7 @@ var Granat = {
         },
         skill4:{
             nazwa: "Wysoko garda",
+            face: "url('images/skill_icon/iceShield.png')",
             type: "selfshield",
             targetsNeeded: 1,
             targets: [],
@@ -154,6 +155,7 @@ var Granat = {
         },
         skill5:{
             nazwa: "Przyszły cios",
+            face: "url('images/skill_icon/persaverance.png')",
             type: "pewnyKryt",
             targetsNeeded: 1,
             targets: [],
@@ -802,7 +804,7 @@ var Bizmut = {
         skill6:null
     }
 };
-//zrób tak, żeby ulepy nie mogły zrobić takich samych speedów, bo potem dziwnie przeskakuje
+
 var reakcjaElement = {
     normal: {//kiedyś zrób:demonic, vampire/undead, holy, shadow, plant  dawaj dla postaci jak mają kilka żywiołów pierwszy ten który jest im bliższy
         normal:1,
@@ -965,15 +967,25 @@ var charSelect9 = document.getElementById("charSelect9");
 var charSelect10 = document.getElementById("charSelect10");
 
 var character1 = document.getElementById("character1");
+character1.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
 var character2 = document.getElementById("character2");
+character2.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
 var character3 = document.getElementById("character3");
+character3.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
 var character4 = document.getElementById("character4");
+character4.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
 var character5 = document.getElementById("character5");
+character5.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
 var character6 = document.getElementById("character6");
+character6.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
 var character7 = document.getElementById("character7");
+character7.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
 var character8 = document.getElementById("character8");
+character8.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
 var character9 = document.getElementById("character9");
+character9.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
 var character10 = document.getElementById("character10");
+character10.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
 
 var poz1 = document.getElementById("poz1");
 var poz2 = document.getElementById("poz2");
