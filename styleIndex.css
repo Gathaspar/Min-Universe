@@ -29,17 +29,6 @@ body {
   transition: background 0.2s;
 }
 
-#collection{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  display: none;
-  background-image: url("images/system_UI/menuTlo.png");
-  background-size: cover;
-  width: 400px;
-  height: 600px;
-}
-
 #credits{
   position: absolute;
   top: 0px;
