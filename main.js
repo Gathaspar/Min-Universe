@@ -1750,10 +1750,10 @@ var shield9 = document.getElementById("shield9");
 var shield10 = document.getElementById("shield10");
 
 var kolejność
-var wybrany//sprawdź wielokrotnego freeza, pierwsza postać stoi, a druga jedzie mimo freeza
+var wybrany
 var i = 0
 function tura(){
-    if(wybrany.couldown1 > 0){//w update ui zrób, że jeżeli couldown obecnyych ładowanych skillów jest nie zero to wtedy obrazki mają opacity na 0.5 lub obrazki z cyfrą
+    if(wybrany.couldown1 > 0){
         wybrany.couldown1 = wybrany.couldown1 - 1;
     }
     if(wybrany.couldown2 > 0){
@@ -1788,20 +1788,19 @@ function tura(){
         koniecTury();
     }
     wybrany = kolejność[i];
-    if(wybrany.freeze.rounds > 0){
+    while(wybrany.freeze.rounds > 0){
         wybrany.freeze.rounds = wybrany.freeze.rounds - 1;
         i = i + 1;
+        if(i >= kolejność.length){
+            i = 0;
+            koniecTury();
+        }
+        wybrany = kolejność[i];
     }
-    if(i >= kolejność.length){
-        i = 0;
-        koniecTury();
-    }
-    wybrany = kolejność[i];
     updateUI();
 };
 
 function koniecTury(){
-    //tu zrób koniec gry na warunku, że postaćPoz1...postaćPoz5 nie żyją lub w drugą stronę
     for(var j = 0; j<kolejność.length; j++){
         if(kolejność[j].poison.rounds > 0){
             if(kolejność[j].shield === 0){
@@ -2587,13 +2586,13 @@ function cyklGry(){
                                 listaObszaru = [postaćPoz1, postaćPoz2, postaćPoz3, postaćPoz4, postaćPoz5];
                                 for(var k = 0; k<listaObszaru.length; k++){
                                     listaObszaru[k].energy = listaObszaru[k].energy - akcja.value;
-                                    listaObszaru[k].speed = listaObszaru[k].speed + 40;
+                                    listaObszaru[k].speed = listaObszaru[k].speed + 36;
                                 }
                             }else{
                                 listaObszaru = [postaćPoz6, postaćPoz7, postaćPoz8, postaćPoz9, postaćPoz10];
                                 for(var k = 0; k<listaObszaru.length; k++){
                                     listaObszaru[k].energy = listaObszaru[k].energy - akcja.value;
-                                    listaObszaru[k].speed = listaObszaru[k].speed + 40;
+                                    listaObszaru[k].speed = listaObszaru[k].speed + 36;
                                 }
                             }
                         }
@@ -2613,7 +2612,7 @@ function cyklGry(){
                                 akcja.targets[j].alive = false;
                                 kolejność = kolejność.filter(u => u.alive);
                             }
-                            wybrany.speed = wybrany.speed + 60;
+                            wybrany.speed = wybrany.speed + 36;
                         }
                     }else{//góra to kryt, a dół bezkryt
                         if(akcja.type === "atak"){
@@ -2788,13 +2787,13 @@ function cyklGry(){
                                 listaObszaru = [postaćPoz1, postaćPoz2, postaćPoz3, postaćPoz4, postaćPoz5];
                                 for(var k = 0; k<listaObszaru.length; k++){
                                     listaObszaru[k].energy = listaObszaru[k].energy - akcja.value;
-                                    listaObszaru[k].speed = listaObszaru[k].speed + 20;
+                                    listaObszaru[k].speed = listaObszaru[k].speed + 18;
                                 }
                             }else{
                                 listaObszaru = [postaćPoz6, postaćPoz7, postaćPoz8, postaćPoz9, postaćPoz10];
                                 for(var k = 0; k<listaObszaru.length; k++){
                                     listaObszaru[k].energy = listaObszaru[k].energy - akcja.value;
-                                    listaObszaru[k].speed = listaObszaru[k].speed + 20;
+                                    listaObszaru[k].speed = listaObszaru[k].speed + 18;
                                 }
                             }
                         }
@@ -2814,7 +2813,7 @@ function cyklGry(){
                                 akcja.targets[j].alive = false;
                                 kolejność = kolejność.filter(u => u.alive);
                             }
-                            wybrany.speed = wybrany.speed + 30;
+                            wybrany.speed = wybrany.speed + 18;
                         }
                     }
 
