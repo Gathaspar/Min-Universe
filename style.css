@@ -143,8 +143,8 @@ body {
 #characterSelected>div{
   margin: auto;
 }
-
-#characterSelected>div>button{
+#charSelect1, #charSelect2, #charSelect3, #charSelect4, #charSelect5, #charSelect6, #charSelect7, #charSelect8, #charSelect9, #charSelect10{
+  background-size: cover;
   width: 90px;
   height: 90px;
   border: solid black 5px;
@@ -170,9 +170,8 @@ body {
   grid-template-columns: auto auto auto auto auto auto auto auto auto;
   gap: 10px;
 }
-
-#characterButtons>button {
-  background: grey;
+#character1, #character2, #character3, #character4, #character5, #character6, #character7, #character8, #character9, #character10{
+  background-size: cover;
   width: 160px;
   height: 160px;
   border: solid darkgrey 5px;

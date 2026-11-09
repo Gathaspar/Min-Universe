@@ -967,25 +967,25 @@ var charSelect9 = document.getElementById("charSelect9");
 var charSelect10 = document.getElementById("charSelect10");
 
 var character1 = document.getElementById("character1");
-character1.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
+character1.style.backgroundImage = 'url("images/character_icon/steven.png")';
 var character2 = document.getElementById("character2");
-character2.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
+character2.style.backgroundImage = 'url("images/character_icon/granat.png")';
 var character3 = document.getElementById("character3");
-character3.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
+character3.style.backgroundImage = 'url("images/character_icon/ametyst.png")';
 var character4 = document.getElementById("character4");
-character4.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
+character4.style.backgroundImage = 'url("images/character_icon/perła.png")';
 var character5 = document.getElementById("character5");
-character5.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
+character5.style.backgroundImage = 'url("images/character_icon/greg.png")';
 var character6 = document.getElementById("character6");
-character6.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
+character6.style.backgroundImage = 'url("images/character_icon/connie.png")';
 var character7 = document.getElementById("character7");
-character7.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
+character7.style.backgroundImage = 'url("images/character_icon/lapis.png")';
 var character8 = document.getElementById("character8");
-character8.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
+character8.style.backgroundImage = 'url("images/character_icon/perydot.png")';
 var character9 = document.getElementById("character9");
-character9.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
+character9.style.backgroundImage = 'url("images/character_icon/jaspis.png")';
 var character10 = document.getElementById("character10");
-character10.style.backgroundImage = 'url("images/skill_icon/poisonTooth.png")';
+character10.style.backgroundImage = 'url("images/character_icon/bizmut.png")';
 
 var poz1 = document.getElementById("poz1");
 var poz2 = document.getElementById("poz2");
@@ -1011,630 +1011,760 @@ var postaćPoz10
 
 //wybór postaci
 character1.addEventListener("click",() => {
+    if(character1.value === "1"){
+        return;
+    }
     if(charSelect1.value === "0"){
         charSelect1.value = "1";
-        charSelect1.style.backgroundColor = "brown";
+        character1.value = "1";
+        charSelect1.style.backgroundImage = 'url("images/character_icon/steven.png")';
         postaćPoz1 = StevenUniverse;
         postaćPoz1.top = getComputedStyle(poz1).top; //getComputedStyle bierze wszystko, czyli 100px
         postaćPoz1.left = getComputedStyle(poz1).left;
     }else if(charSelect2.value === "0"){
         charSelect2.value = "1";
-        charSelect2.style.backgroundColor = "brown";
+        character1.value = "1";
+        charSelect2.style.backgroundImage = 'url("images/character_icon/steven.png")';
         postaćPoz2 = StevenUniverse;
         postaćPoz2.top = getComputedStyle(poz2).top;
         postaćPoz2.left = getComputedStyle(poz2).left;
     }else if(charSelect3.value === "0"){
         charSelect3.value = "1";
-        charSelect3.style.backgroundColor = "brown";
+        character1.value = "1";
+        charSelect3.style.backgroundImage = 'url("images/character_icon/steven.png")';
         postaćPoz3 = StevenUniverse;
         postaćPoz3.top = getComputedStyle(poz3).top;
         postaćPoz3.left = getComputedStyle(poz3).left;
     }else if(charSelect4.value === "0"){
         charSelect4.value = "1";
-        charSelect4.style.backgroundColor = "brown";
+        character1.value = "1";
+        charSelect4.style.backgroundImage = 'url("images/character_icon/steven.png")';
         postaćPoz4 = StevenUniverse;
         postaćPoz4.top = getComputedStyle(poz4).top;
         postaćPoz4.left = getComputedStyle(poz4).left;
     }else if(charSelect5.value === "0"){
         charSelect5.value = "1";
-        charSelect5.style.backgroundColor = "brown";
+        character1.value = "1";
+        charSelect5.style.backgroundImage = 'url("images/character_icon/steven.png")';
         postaćPoz5 = StevenUniverse;
         postaćPoz5.top = getComputedStyle(poz5).top;
         postaćPoz5.left = getComputedStyle(poz5).left;
     }else if(charSelect6.value === "0"){
         charSelect6.value = "1";
-        charSelect6.style.backgroundColor = "brown";
+        character1.value = "1";
+        charSelect6.style.backgroundImage = 'url("images/character_icon/steven.png")';
         postaćPoz6 = StevenUniverse;
         postaćPoz6.top = getComputedStyle(poz6).top;
         postaćPoz6.left = getComputedStyle(poz6).left;
     }else if(charSelect7.value === "0"){
         charSelect7.value = "1";
-        charSelect7.style.backgroundColor = "brown";
+        character1.value = "1";
+        charSelect7.style.backgroundImage = 'url("images/character_icon/steven.png")';
         postaćPoz7 = StevenUniverse;
         postaćPoz7.top = getComputedStyle(poz7).top;
         postaćPoz7.left = getComputedStyle(poz7).left;
     }else if(charSelect8.value === "0"){
         charSelect8.value = "1";
-        charSelect8.style.backgroundColor = "brown";
+        character1.value = "1";
+        charSelect8.style.backgroundImage = 'url("images/character_icon/steven.png")';
         postaćPoz8 = StevenUniverse;
         postaćPoz8.top = getComputedStyle(poz8).top;
         postaćPoz8.left = getComputedStyle(poz8).left;
     }else if(charSelect9.value === "0"){
         charSelect9.value = "1";
-        charSelect9.style.backgroundColor = "brown";
+        character1.value = "1";
+        charSelect9.style.backgroundImage = 'url("images/character_icon/steven.png")';
         postaćPoz9 = StevenUniverse;
         postaćPoz9.top = getComputedStyle(poz9).top;
         postaćPoz9.left = getComputedStyle(poz9).left;
     }else if(charSelect10.value === "0"){
         charSelect10.value = "1";
-        charSelect10.style.backgroundColor = "brown";
+        character1.value = "1";
+        charSelect10.style.backgroundImage = 'url("images/character_icon/steven.png")';
         postaćPoz10 = StevenUniverse;
         postaćPoz10.top = getComputedStyle(poz10).top;
         postaćPoz10.left = getComputedStyle(poz10).left;
     }
 });
 character2.addEventListener("click",() => {
+    if(character2.value === "1"){
+        return;
+    }
     if(charSelect1.value === "0"){
         charSelect1.value = "2";
-        charSelect1.style.backgroundColor = "maroon";
+        character2.value = "1";
+        charSelect1.style.backgroundImage = 'url("images/character_icon/granat.png")';
         postaćPoz1 = Granat;
         postaćPoz1.top = getComputedStyle(poz1).top;
         postaćPoz1.left = getComputedStyle(poz1).left;
     }else if(charSelect2.value === "0"){
         charSelect2.value = "2";
-        charSelect2.style.backgroundColor = "maroon";
+        character2.value = "1";
+        charSelect2.style.backgroundImage = 'url("images/character_icon/granat.png")';
         postaćPoz2 = Granat;
         postaćPoz2.top = getComputedStyle(poz2).top;
         postaćPoz2.left = getComputedStyle(poz2).left;
     }else if(charSelect3.value === "0"){
         charSelect3.value = "2";
-        charSelect3.style.backgroundColor = "maroon";
+        character2.value = "1";
+        charSelect3.style.backgroundImage = 'url("images/character_icon/granat.png")';
         postaćPoz3 = Granat;
         postaćPoz3.top = getComputedStyle(poz3).top;
         postaćPoz3.left = getComputedStyle(poz3).left;
     }else if(charSelect4.value === "0"){
         charSelect4.value = "2";
-        charSelect4.style.backgroundColor = "maroon";
+        character2.value = "1";
+        charSelect4.style.backgroundImage = 'url("images/character_icon/granat.png")';
         postaćPoz4 = Granat;
         postaćPoz4.top = getComputedStyle(poz4).top;
         postaćPoz4.left = getComputedStyle(poz4).left;
     }else if(charSelect5.value === "0"){
         charSelect5.value = "2";
-        charSelect5.style.backgroundColor = "maroon";
+        character2.value = "1";
+        charSelect5.style.backgroundImage = 'url("images/character_icon/granat.png")';
         postaćPoz5 = Granat;
         postaćPoz5.top = getComputedStyle(poz5).top;
         postaćPoz5.left = getComputedStyle(poz5).left;
     }else if(charSelect6.value === "0"){
         charSelect6.value = "2";
-        charSelect6.style.backgroundColor = "maroon";
+        character2.value = "1";
+        charSelect6.style.backgroundImage = 'url("images/character_icon/granat.png")';
         postaćPoz6 = Granat;
         postaćPoz6.top = getComputedStyle(poz6).top;
         postaćPoz6.left = getComputedStyle(poz6).left;
     }else if(charSelect7.value === "0"){
         charSelect7.value = "2";
-        charSelect7.style.backgroundColor = "maroon";
+        character2.value = "1";
+        charSelect7.style.backgroundImage = 'url("images/character_icon/granat.png")';
         postaćPoz7 = Granat;
         postaćPoz7.top = getComputedStyle(poz7).top;
         postaćPoz7.left = getComputedStyle(poz7).left;
     }else if(charSelect8.value === "0"){
         charSelect8.value = "2";
-        charSelect8.style.backgroundColor = "maroon";
+        character2.value = "1";
+        charSelect8.style.backgroundImage = 'url("images/character_icon/granat.png")';
         postaćPoz8 = Granat;
         postaćPoz8.top = getComputedStyle(poz8).top;
         postaćPoz8.left = getComputedStyle(poz8).left;
     }else if(charSelect9.value === "0"){
         charSelect9.value = "2";
-        charSelect9.style.backgroundColor = "maroon";
+        character2.value = "1";
+        charSelect9.style.backgroundImage = 'url("images/character_icon/granat.png")';
         postaćPoz9 = Granat;
         postaćPoz9.top = getComputedStyle(poz9).top;
         postaćPoz9.left = getComputedStyle(poz9).left;
     }else if(charSelect10.value === "0"){
         charSelect10.value = "2";
-        charSelect10.style.backgroundColor = "maroon";
+        character2.value = "1";
+        charSelect10.style.backgroundImage = 'url("images/character_icon/granat.png")';
         postaćPoz10 = Granat;
         postaćPoz10.top = getComputedStyle(poz10).top;
         postaćPoz10.left = getComputedStyle(poz10).left;
     }
 });
 character3.addEventListener("click",() => {
+    if(character3.value === "1"){
+        return;
+    }
     if(charSelect1.value === "0"){
         charSelect1.value = "3";
-        charSelect1.style.backgroundColor = "blueviolet";
+        character3.value = "1";
+        charSelect1.style.backgroundImage = 'url("images/character_icon/ametyst.png")';
         postaćPoz1 = Ametyst;
         postaćPoz1.top = getComputedStyle(poz1).top;
         postaćPoz1.left = getComputedStyle(poz1).left;
     }else if(charSelect2.value === "0"){
         charSelect2.value = "3";
-        charSelect2.style.backgroundColor = "blueviolet";
+        character3.value = "1";
+        charSelect2.style.backgroundImage = 'url("images/character_icon/ametyst.png")';
         postaćPoz2 = Ametyst;
         postaćPoz2.top = getComputedStyle(poz2).top;
         postaćPoz2.left = getComputedStyle(poz2).left;
     }else if(charSelect3.value === "0"){
         charSelect3.value = "3";
-        charSelect3.style.backgroundColor = "blueviolet";
+        character3.value = "1";
+        charSelect3.style.backgroundImage = 'url("images/character_icon/ametyst.png")';
         postaćPoz3 = Ametyst;
         postaćPoz3.top = getComputedStyle(poz3).top;
         postaćPoz3.left = getComputedStyle(poz3).left;
     }else if(charSelect4.value === "0"){
         charSelect4.value = "3";
-        charSelect4.style.backgroundColor = "blueviolet";
+        character3.value = "1";
+        charSelect4.style.backgroundImage = 'url("images/character_icon/ametyst.png")';
         postaćPoz4 = Ametyst;
         postaćPoz4.top = getComputedStyle(poz4).top;
         postaćPoz4.left = getComputedStyle(poz4).left;
     }else if(charSelect5.value === "0"){
         charSelect5.value = "3";
-        charSelect5.style.backgroundColor = "blueviolet";
+        character3.value = "1";
+        charSelect5.style.backgroundImage = 'url("images/character_icon/ametyst.png")';
         postaćPoz5 = Ametyst;
         postaćPoz5.top = getComputedStyle(poz5).top;
         postaćPoz5.left = getComputedStyle(poz5).left;
     }else if(charSelect6.value === "0"){
         charSelect6.value = "3";
-        charSelect6.style.backgroundColor = "blueviolet";
+        character3.value = "1";
+        charSelect6.style.backgroundImage = 'url("images/character_icon/ametyst.png")';
         postaćPoz6 = Ametyst;
         postaćPoz6.top = getComputedStyle(poz6).top;
         postaćPoz6.left = getComputedStyle(poz6).left;
     }else if(charSelect7.value === "0"){
         charSelect7.value = "3";
-        charSelect7.style.backgroundColor = "blueviolet";
+        character3.value = "1";
+        charSelect7.style.backgroundImage = 'url("images/character_icon/ametyst.png")';
         postaćPoz7 = Ametyst;
         postaćPoz7.top = getComputedStyle(poz7).top;
         postaćPoz7.left = getComputedStyle(poz7).left;
     }else if(charSelect8.value === "0"){
         charSelect8.value = "3";
-        charSelect8.style.backgroundColor = "blueviolet";
+        character3.value = "1";
+        charSelect8.style.backgroundImage = 'url("images/character_icon/ametyst.png")';
         postaćPoz8 = Ametyst;
         postaćPoz8.top = getComputedStyle(poz8).top;
         postaćPoz8.left = getComputedStyle(poz8).left;
     }else if(charSelect9.value === "0"){
         charSelect9.value = "3";
-        charSelect9.style.backgroundColor = "blueviolet";
+        character3.value = "1";
+        charSelect9.style.backgroundImage = 'url("images/character_icon/ametyst.png")';
         postaćPoz9 = Ametyst;
         postaćPoz9.top = getComputedStyle(poz9).top;
         postaćPoz9.left = getComputedStyle(poz9).left;
     }else if(charSelect10.value === "0"){
         charSelect10.value = "3";
-        charSelect10.style.backgroundColor = "blueviolet";
+        character3.value = "1";
+        charSelect10.style.backgroundImage = 'url("images/character_icon/ametyst.png")';
         postaćPoz10 = Ametyst;
         postaćPoz10.top = getComputedStyle(poz10).top;
         postaćPoz10.left = getComputedStyle(poz10).left;
     }
 });
 character4.addEventListener("click",() => {
+    if(character4.value === "1"){
+        return;
+    }
     if(charSelect1.value === "0"){
         charSelect1.value = "4";
-        charSelect1.style.backgroundColor = "lightcyan";
+        character4.value = "1";
+        charSelect1.style.backgroundImage = 'url("images/character_icon/perła.png")';
         postaćPoz1 = Perła;
         postaćPoz1.top = getComputedStyle(poz1).top;
         postaćPoz1.left = getComputedStyle(poz1).left;
     }else if(charSelect2.value === "0"){
         charSelect2.value = "4";
-        charSelect2.style.backgroundColor = "lightcyan";
+        character4.value = "1";
+        charSelect2.style.backgroundImage = 'url("images/character_icon/perła.png")';
         postaćPoz2 = Perła;
         postaćPoz2.top = getComputedStyle(poz2).top;
         postaćPoz2.left = getComputedStyle(poz2).left;
     }else if(charSelect3.value === "0"){
         charSelect3.value = "4";
-        charSelect3.style.backgroundColor = "lightcyan";
+        character4.value = "1";
+        charSelect3.style.backgroundImage = 'url("images/character_icon/perła.png")';
         postaćPoz3 = Perła;
         postaćPoz3.top = getComputedStyle(poz3).top;
         postaćPoz3.left = getComputedStyle(poz3).left;
     }else if(charSelect4.value === "0"){
         charSelect4.value = "4";
-        charSelect4.style.backgroundColor = "lightcyan";
+        character4.value = "1";
+        charSelect4.style.backgroundImage = 'url("images/character_icon/perła.png")';
         postaćPoz4 = Perła;
         postaćPoz4.top = getComputedStyle(poz4).top;
         postaćPoz4.left = getComputedStyle(poz4).left;
     }else if(charSelect5.value === "0"){
         charSelect5.value = "4";
-        charSelect5.style.backgroundColor = "lightcyan";
+        character4.value = "1";
+        charSelect5.style.backgroundImage = 'url("images/character_icon/perła.png")';
         postaćPoz5 = Perła;
         postaćPoz5.top = getComputedStyle(poz5).top;
         postaćPoz5.left = getComputedStyle(poz5).left;
     }else if(charSelect6.value === "0"){
         charSelect6.value = "4";
-        charSelect6.style.backgroundColor = "lightcyan";
+        character4.value = "1";
+        charSelect6.style.backgroundImage = 'url("images/character_icon/perła.png")';
         postaćPoz6 = Perła;
         postaćPoz6.top = getComputedStyle(poz6).top;
         postaćPoz6.left = getComputedStyle(poz6).left;
     }else if(charSelect7.value === "0"){
         charSelect7.value = "4";
-        charSelect7.style.backgroundColor = "lightcyan";
+        character4.value = "1";
+        charSelect7.style.backgroundImage = 'url("images/character_icon/perła.png")';
         postaćPoz7 = Perła;
         postaćPoz7.top = getComputedStyle(poz7).top;
         postaćPoz7.left = getComputedStyle(poz7).left;
     }else if(charSelect8.value === "0"){
         charSelect8.value = "4";
-        charSelect8.style.backgroundColor = "lightcyan";
+        character4.value = "1";
+        charSelect8.style.backgroundImage = 'url("images/character_icon/perła.png")';
         postaćPoz8 = Perła;
         postaćPoz8.top = getComputedStyle(poz8).top;
         postaćPoz8.left = getComputedStyle(poz8).left;
     }else if(charSelect9.value === "0"){
         charSelect9.value = "4";
-        charSelect9.style.backgroundColor = "lightcyan";
+        character4.value = "1";
+        charSelect9.style.backgroundImage = 'url("images/character_icon/perła.png")';
         postaćPoz9 = Perła;
         postaćPoz9.top = getComputedStyle(poz9).top;
         postaćPoz9.left = getComputedStyle(poz9).left;
     }else if(charSelect10.value === "0"){
         charSelect10.value = "4";
-        charSelect10.style.backgroundColor = "lightcyan";
+        character4.value = "1";
+        charSelect10.style.backgroundImage = 'url("images/character_icon/perła.png")';
         postaćPoz10 = Perła;
         postaćPoz10.top = getComputedStyle(poz10).top;
         postaćPoz10.left = getComputedStyle(poz10).left;
     }
 });
 character5.addEventListener("click",() => {
+    if(character5.value === "1"){
+        return;
+    }
     if(charSelect1.value === "0"){
         charSelect1.value = "5";
-        charSelect1.style.backgroundColor = "bisque";
+        character5.value = "1";
+        charSelect1.style.backgroundImage = 'url("images/character_icon/greg.png")';
         postaćPoz1 = Greg;
         postaćPoz1.top = getComputedStyle(poz1).top;
         postaćPoz1.left = getComputedStyle(poz1).left;
     }else if(charSelect2.value === "0"){
         charSelect2.value = "5";
-        charSelect2.style.backgroundColor = "bisque";
+        character5.value = "1";
+        charSelect2.style.backgroundImage = 'url("images/character_icon/greg.png")';
         postaćPoz2 = Greg;
         postaćPoz2.top = getComputedStyle(poz2).top;
         postaćPoz2.left = getComputedStyle(poz2).left;
     }else if(charSelect3.value === "0"){
         charSelect3.value = "5";
-        charSelect3.style.backgroundColor = "bisque";
+        character5.value = "1";
+        charSelect3.style.backgroundImage = 'url("images/character_icon/greg.png")';
         postaćPoz3 = Greg;
         postaćPoz3.top = getComputedStyle(poz3).top;
         postaćPoz3.left = getComputedStyle(poz3).left;
     }else if(charSelect4.value === "0"){
         charSelect4.value = "5";
-        charSelect4.style.backgroundColor = "bisque";
+        character5.value = "1";
+        charSelect4.style.backgroundImage = 'url("images/character_icon/greg.png")';
         postaćPoz4 = Greg;
         postaćPoz4.top = getComputedStyle(poz4).top;
         postaćPoz4.left = getComputedStyle(poz4).left;
     }else if(charSelect5.value === "0"){
         charSelect5.value = "5";
-        charSelect5.style.backgroundColor = "bisque";
+        character5.value = "1";
+        charSelect5.style.backgroundImage = 'url("images/character_icon/greg.png")';
         postaćPoz5 = Greg;
         postaćPoz5.top = getComputedStyle(poz5).top;
         postaćPoz5.left = getComputedStyle(poz5).left;
     }else if(charSelect6.value === "0"){
         charSelect6.value = "5";
-        charSelect6.style.backgroundColor = "bisque";
+        character5.value = "1";
+        charSelect6.style.backgroundImage = 'url("images/character_icon/greg.png")';
         postaćPoz6 = Greg;
         postaćPoz6.top = getComputedStyle(poz6).top;
         postaćPoz6.left = getComputedStyle(poz6).left;
     }else if(charSelect7.value === "0"){
         charSelect7.value = "5";
-        charSelect7.style.backgroundColor = "bisque";
+        character5.value = "1";
+        charSelect7.style.backgroundImage = 'url("images/character_icon/greg.png")';
         postaćPoz7 = Greg;
         postaćPoz7.top = getComputedStyle(poz7).top;
         postaćPoz7.left = getComputedStyle(poz7).left;
     }else if(charSelect8.value === "0"){
         charSelect8.value = "5";
-        charSelect8.style.backgroundColor = "bisque";
+        character5.value = "1";
+        charSelect8.style.backgroundImage = 'url("images/character_icon/greg.png")';
         postaćPoz8 = Greg;
         postaćPoz8.top = getComputedStyle(poz8).top;
         postaćPoz8.left = getComputedStyle(poz8).left;
     }else if(charSelect9.value === "0"){
         charSelect9.value = "5";
-        charSelect9.style.backgroundColor = "bisque";
+        character5.value = "1";
+        charSelect9.style.backgroundImage = 'url("images/character_icon/greg.png")';
         postaćPoz9 = Greg;
         postaćPoz9.top = getComputedStyle(poz9).top;
         postaćPoz9.left = getComputedStyle(poz9).left;
     }else if(charSelect10.value === "0"){
         charSelect10.value = "5";
-        charSelect10.style.backgroundColor = "bisque";
+        character5.value = "1";
+        charSelect10.style.backgroundImage = 'url("images/character_icon/greg.png")';
         postaćPoz10 = Greg;
         postaćPoz10.top = getComputedStyle(poz10).top;
         postaćPoz10.left = getComputedStyle(poz10).left;
     }
 });
 character6.addEventListener("click",() => {
+    if(character6.value === "1"){
+        return;
+    }
     if(charSelect1.value === "0"){
-        charSelect1.value = "1";
-        charSelect1.style.backgroundColor = "antiquewhite";
+        charSelect1.value = "6";
+        character6.value = "1";
+        charSelect1.style.backgroundImage = 'url("images/character_icon/connie.png")';
         postaćPoz1 = Connie;
         postaćPoz1.top = getComputedStyle(poz1).top;
         postaćPoz1.left = getComputedStyle(poz1).left;
     }else if(charSelect2.value === "0"){
-        charSelect2.value = "1";
-        charSelect2.style.backgroundColor = "antiquewhite";
+        charSelect2.value = "6";
+        character6.value = "1";
+        charSelect2.style.backgroundImage = 'url("images/character_icon/connie.png")';
         postaćPoz2 = Connie;
         postaćPoz2.top = getComputedStyle(poz2).top;
         postaćPoz2.left = getComputedStyle(poz2).left;
     }else if(charSelect3.value === "0"){
-        charSelect3.value = "1";
-        charSelect3.style.backgroundColor = "antiquewhite";
+        charSelect3.value = "6";
+        character6.value = "1";
+        charSelect3.style.backgroundImage = 'url("images/character_icon/connie.png")';
         postaćPoz3 = Connie;
         postaćPoz3.top = getComputedStyle(poz3).top;
         postaćPoz3.left = getComputedStyle(poz3).left;
     }else if(charSelect4.value === "0"){
-        charSelect4.value = "1";
-        charSelect4.style.backgroundColor = "antiquewhite";
+        charSelect4.value = "6";
+        character6.value = "1";
+        charSelect4.style.backgroundImage = 'url("images/character_icon/connie.png")';
         postaćPoz4 = Connie;
         postaćPoz4.top = getComputedStyle(poz4).top;
         postaćPoz4.left = getComputedStyle(poz4).left;
     }else if(charSelect5.value === "0"){
-        charSelect5.value = "1";
-        charSelect5.style.backgroundColor = "antiquewhite";
+        charSelect5.value = "6";
+        character6.value = "1";
+        charSelect5.style.backgroundImage = 'url("images/character_icon/connie.png")';
         postaćPoz5 = Connie;
         postaćPoz5.top = getComputedStyle(poz5).top;
         postaćPoz5.left = getComputedStyle(poz5).left;
     }else if(charSelect6.value === "0"){
-        charSelect6.value = "1";
-        charSelect6.style.backgroundColor = "antiquewhite";
+        charSelect6.value = "6";
+        character6.value = "1";
+        charSelect6.style.backgroundImage = 'url("images/character_icon/connie.png")';
         postaćPoz6 = Connie;
         postaćPoz6.top = getComputedStyle(poz6).top;
         postaćPoz6.left = getComputedStyle(poz6).left;
     }else if(charSelect7.value === "0"){
-        charSelect7.value = "1";
-        charSelect7.style.backgroundColor = "antiquewhite";
+        charSelect7.value = "6";
+        character1.value = "1";
+        charSelect7.style.backgroundImage = 'url("images/character_icon/connie.png")';
         postaćPoz7 = Connie;
         postaćPoz7.top = getComputedStyle(poz7).top;
         postaćPoz7.left = getComputedStyle(poz7).left;
     }else if(charSelect8.value === "0"){
-        charSelect8.value = "1";
-        charSelect8.style.backgroundColor = "antiquewhite";
+        charSelect8.value = "6";
+        character6.value = "1";
+        charSelect8.style.backgroundImage = 'url("images/character_icon/connie.png")';
         postaćPoz8 = Connie;
         postaćPoz8.top = getComputedStyle(poz8).top;
         postaćPoz8.left = getComputedStyle(poz8).left;
     }else if(charSelect9.value === "0"){
-        charSelect9.value = "1";
-        charSelect9.style.backgroundColor = "antiquewhite";
+        charSelect9.value = "6";
+        character6.value = "1";
+        charSelect9.style.backgroundImage = 'url("images/character_icon/connie.png")';
         postaćPoz9 = Connie;
         postaćPoz9.top = getComputedStyle(poz9).top;
         postaćPoz9.left = getComputedStyle(poz9).left;
     }else if(charSelect10.value === "0"){
-        charSelect10.value = "1";
-        charSelect10.style.backgroundColor = "antiquewhite";
+        charSelect10.value = "6";
+        character6.value = "1";
+        charSelect10.style.backgroundImage = 'url("images/character_icon/connie.png")';
         postaćPoz10 = Connie;
         postaćPoz10.top = getComputedStyle(poz10).top;
         postaćPoz10.left = getComputedStyle(poz10).left;
     }
 });
 character7.addEventListener("click",() => {
+    if(character7.value === "1"){
+        return;
+    }
     if(charSelect1.value === "0"){
-        charSelect1.value = "1";
-        charSelect1.style.backgroundColor = "blue";
+        charSelect1.value = "7";
+        character7.value = "1";
+        charSelect1.style.backgroundImage = 'url("images/character_icon/lapis.png")';
         postaćPoz1 = Lapis;
         postaćPoz1.top = getComputedStyle(poz1).top;
         postaćPoz1.left = getComputedStyle(poz1).left;
     }else if(charSelect2.value === "0"){
-        charSelect2.value = "1";
-        charSelect2.style.backgroundColor = "blue";
+        charSelect2.value = "7";
+        character7.value = "1";
+        charSelect2.style.backgroundImage = 'url("images/character_icon/lapis.png")';
         postaćPoz2 = Lapis;
         postaćPoz2.top = getComputedStyle(poz2).top;
         postaćPoz2.left = getComputedStyle(poz2).left;
     }else if(charSelect3.value === "0"){
-        charSelect3.value = "1";
-        charSelect3.style.backgroundColor = "blue";
+        charSelect3.value = "7";
+        character7.value = "1";
+        charSelect3.style.backgroundImage = 'url("images/character_icon/lapis.png")';
         postaćPoz3 = Lapis;
         postaćPoz3.top = getComputedStyle(poz3).top;
         postaćPoz3.left = getComputedStyle(poz3).left;
     }else if(charSelect4.value === "0"){
-        charSelect4.value = "1";
-        charSelect4.style.backgroundColor = "blue";
+        charSelect4.value = "7";
+        character7.value = "1";
+        charSelect4.style.backgroundImage = 'url("images/character_icon/lapis.png")';
         postaćPoz4 = Lapis;
         postaćPoz4.top = getComputedStyle(poz4).top;
         postaćPoz4.left = getComputedStyle(poz4).left;
     }else if(charSelect5.value === "0"){
-        charSelect5.value = "1";
-        charSelect5.style.backgroundColor = "blue";
+        charSelect5.value = "7";
+        character7.value = "1";
+        charSelect5.style.backgroundImage = 'url("images/character_icon/lapis.png")';
         postaćPoz5 = Lapis;
         postaćPoz5.top = getComputedStyle(poz5).top;
         postaćPoz5.left = getComputedStyle(poz5).left;
     }else if(charSelect6.value === "0"){
-        charSelect6.value = "1";
-        charSelect6.style.backgroundColor = "blue";
+        charSelect6.value = "7";
+        character7.value = "1";
+        charSelect6.style.backgroundImage = 'url("images/character_icon/lapis.png")';
         postaćPoz6 = Lapis;
         postaćPoz6.top = getComputedStyle(poz6).top;
         postaćPoz6.left = getComputedStyle(poz6).left;
     }else if(charSelect7.value === "0"){
-        charSelect7.value = "1";
-        charSelect7.style.backgroundColor = "blue";
+        charSelect7.value = "7";
+        character7.value = "1";
+        charSelect7.style.backgroundImage = 'url("images/character_icon/lapis.png")';
         postaćPoz7 = Lapis;
         postaćPoz7.top = getComputedStyle(poz7).top;
         postaćPoz7.left = getComputedStyle(poz7).left;
     }else if(charSelect8.value === "0"){
-        charSelect8.value = "1";
-        charSelect8.style.backgroundColor = "blue";
+        charSelect8.value = "7";
+        character7.value = "1";
+        charSelect8.style.backgroundImage = 'url("images/character_icon/lapis.png")';
         postaćPoz8 = Lapis;
         postaćPoz8.top = getComputedStyle(poz8).top;
         postaćPoz8.left = getComputedStyle(poz8).left;
     }else if(charSelect9.value === "0"){
-        charSelect9.value = "1";
-        charSelect9.style.backgroundColor = "blue";
+        charSelect9.value = "7";
+        character7.value = "1";
+        charSelect9.style.backgroundImage = 'url("images/character_icon/lapis.png")';
         postaćPoz9 = Lapis;
         postaćPoz9.top = getComputedStyle(poz9).top;
         postaćPoz9.left = getComputedStyle(poz9).left;
     }else if(charSelect10.value === "0"){
-        charSelect10.value = "1";
-        charSelect10.style.backgroundColor = "blue";
+        charSelect10.value = "7";
+        character7.value = "1";
+        charSelect10.style.backgroundImage = 'url("images/character_icon/lapis.png")';
         postaćPoz10 = Lapis;
         postaćPoz10.top = getComputedStyle(poz10).top;
         postaćPoz10.left = getComputedStyle(poz10).left;
     }
 });
 character8.addEventListener("click",() => {
+    if(character8.value === "1"){
+        return;
+    }
     if(charSelect1.value === "0"){
-        charSelect1.value = "1";
-        charSelect1.style.backgroundColor = "green";
+        charSelect1.value = "8";
+        character8.value = "1";
+        charSelect1.style.backgroundImage = 'url("images/character_icon/perydot.png")';
         postaćPoz1 = Perydot;
         postaćPoz1.top = getComputedStyle(poz1).top;
         postaćPoz1.left = getComputedStyle(poz1).left;
     }else if(charSelect2.value === "0"){
-        charSelect2.value = "1";
-        charSelect2.style.backgroundColor = "green";
+        charSelect2.value = "8";
+        character8.value = "1";
+        charSelect2.style.backgroundImage = 'url("images/character_icon/perydot.png")';
         postaćPoz2 = Perydot;
         postaćPoz2.top = getComputedStyle(poz2).top;
         postaćPoz2.left = getComputedStyle(poz2).left;
     }else if(charSelect3.value === "0"){
-        charSelect3.value = "1";
-        charSelect3.style.backgroundColor = "green";
+        charSelect3.value = "8";
+        character8.value = "1";
+        charSelect3.style.backgroundImage = 'url("images/character_icon/perydot.png")';
         postaćPoz3 = Perydot;
         postaćPoz3.top = getComputedStyle(poz3).top;
         postaćPoz3.left = getComputedStyle(poz3).left;
     }else if(charSelect4.value === "0"){
-        charSelect4.value = "1";
-        charSelect4.style.backgroundColor = "green";
+        charSelect4.value = "8";
+        character8.value = "1";
+        charSelect4.style.backgroundImage = 'url("images/character_icon/perydot.png")';
         postaćPoz4 = Perydot;
         postaćPoz4.top = getComputedStyle(poz4).top;
         postaćPoz4.left = getComputedStyle(poz4).left;
     }else if(charSelect5.value === "0"){
-        charSelect5.value = "1";
-        charSelect5.style.backgroundColor = "green";
+        charSelect5.value = "8";
+        character8.value = "1";
+        charSelect5.style.backgroundImage = 'url("images/character_icon/perydot.png")';
         postaćPoz5 = Perydot;
         postaćPoz5.top = getComputedStyle(poz5).top;
         postaćPoz5.left = getComputedStyle(poz5).left;
     }else if(charSelect6.value === "0"){
-        charSelect6.value = "1";
-        charSelect6.style.backgroundColor = "green";
+        charSelect6.value = "8";
+        character8.value = "1";
+        charSelect6.style.backgroundImage = 'url("images/character_icon/perydot.png")';
         postaćPoz6 = Perydot;
         postaćPoz6.top = getComputedStyle(poz6).top;
         postaćPoz6.left = getComputedStyle(poz6).left;
     }else if(charSelect7.value === "0"){
-        charSelect7.value = "1";
-        charSelect7.style.backgroundColor = "green";
+        charSelect7.value = "8";
+        character8.value = "1";
+        charSelect7.style.backgroundImage = 'url("images/character_icon/perydot.png")';
         postaćPoz7 = Perydot;
         postaćPoz7.top = getComputedStyle(poz7).top;
         postaćPoz7.left = getComputedStyle(poz7).left;
     }else if(charSelect8.value === "0"){
-        charSelect8.value = "1";
-        charSelect8.style.backgroundColor = "green";
+        charSelect8.value = "8";
+        character8.value = "1";
+        charSelect8.style.backgroundImage = 'url("images/character_icon/perydot.png")';
         postaćPoz8 = Perydot;
         postaćPoz8.top = getComputedStyle(poz8).top;
         postaćPoz8.left = getComputedStyle(poz8).left;
     }else if(charSelect9.value === "0"){
-        charSelect9.value = "1";
-        charSelect9.style.backgroundColor = "green";
+        charSelect9.value = "8";
+        character8.value = "1";
+        charSelect9.style.backgroundImage = 'url("images/character_icon/perydot.png")';
         postaćPoz9 = Perydot;
         postaćPoz9.top = getComputedStyle(poz9).top;
         postaćPoz9.left = getComputedStyle(poz9).left;
     }else if(charSelect10.value === "0"){
-        charSelect10.value = "1";
-        charSelect10.style.backgroundColor = "green";
+        charSelect10.value = "8";
+        character8.value = "1";
+        charSelect10.style.backgroundImage = 'url("images/character_icon/perydot.png")';
         postaćPoz10 = Perydot;
         postaćPoz10.top = getComputedStyle(poz10).top;
         postaćPoz10.left = getComputedStyle(poz10).left;
     }
 });
 character9.addEventListener("click",() => {
+    if(character9.value === "1"){
+        return;
+    }
     if(charSelect1.value === "0"){
-        charSelect1.value = "1";
-        charSelect1.style.backgroundColor = "goldenrod";
+        charSelect1.value = "9";
+        character9.value = "1";
+        charSelect1.style.backgroundImage = 'url("images/character_icon/jaspis.png")';
         postaćPoz1 = Jaspis;
         postaćPoz1.top = getComputedStyle(poz1).top;
         postaćPoz1.left = getComputedStyle(poz1).left;
     }else if(charSelect2.value === "0"){
-        charSelect2.value = "1";
-        charSelect2.style.backgroundColor = "goldenrod";
+        charSelect2.value = "9";
+        character9.value = "1";
+        charSelect2.style.backgroundImage = 'url("images/character_icon/jaspis.png")';
         postaćPoz2 = Jaspis;
         postaćPoz2.top = getComputedStyle(poz2).top;
         postaćPoz2.left = getComputedStyle(poz2).left;
     }else if(charSelect3.value === "0"){
-        charSelect3.value = "1";
-        charSelect3.style.backgroundColor = "goldenrod";
+        charSelect3.value = "9";
+        character9.value = "1";
+        charSelect3.style.backgroundImage = 'url("images/character_icon/jaspis.png")';
         postaćPoz3 = Jaspis;
         postaćPoz3.top = getComputedStyle(poz3).top;
         postaćPoz3.left = getComputedStyle(poz3).left;
     }else if(charSelect4.value === "0"){
-        charSelect4.value = "1";
-        charSelect4.style.backgroundColor = "goldenrod";
+        charSelect4.value = "9";
+        character9.value = "1";
+        charSelect4.style.backgroundImage = 'url("images/character_icon/jaspis.png")';
         postaćPoz4 = Jaspis;
         postaćPoz4.top = getComputedStyle(poz4).top;
         postaćPoz4.left = getComputedStyle(poz4).left;
     }else if(charSelect5.value === "0"){
-        charSelect5.value = "1";
-        charSelect5.style.backgroundColor = "goldenrod";
+        charSelect5.value = "9";
+        character9.value = "1";
+        charSelect5.style.backgroundImage = 'url("images/character_icon/jaspis.png")';
         postaćPoz5 = Jaspis;
         postaćPoz5.top = getComputedStyle(poz5).top;
         postaćPoz5.left = getComputedStyle(poz5).left;
     }else if(charSelect6.value === "0"){
-        charSelect6.value = "1";
-        charSelect6.style.backgroundColor = "goldenrod";
+        charSelect6.value = "9";
+        character9.value = "1";
+        charSelect6.style.backgroundImage = 'url("images/character_icon/jaspis.png")';
         postaćPoz6 = Jaspis;
         postaćPoz6.top = getComputedStyle(poz6).top;
         postaćPoz6.left = getComputedStyle(poz6).left;
     }else if(charSelect7.value === "0"){
-        charSelect7.value = "1";
-        charSelect7.style.backgroundColor = "goldenrod";
+        charSelect7.value = "9";
+        character9.value = "1";
+        charSelect7.style.backgroundImage = 'url("images/character_icon/jaspis.png")';
         postaćPoz7 = Jaspis;
         postaćPoz7.top = getComputedStyle(poz7).top;
         postaćPoz7.left = getComputedStyle(poz7).left;
     }else if(charSelect8.value === "0"){
-        charSelect8.value = "1";
-        charSelect8.style.backgroundColor = "goldenrod";
+        charSelect8.value = "9";
+        character9.value = "1";
+        charSelect8.style.backgroundImage = 'url("images/character_icon/jaspis.png")';
         postaćPoz8 = Jaspis;
         postaćPoz8.top = getComputedStyle(poz8).top;
         postaćPoz8.left = getComputedStyle(poz8).left;
     }else if(charSelect9.value === "0"){
-        charSelect9.value = "1";
-        charSelect9.style.backgroundColor = "goldenrod";
+        charSelect9.value = "9";
+        character9.value = "1";
+        charSelect9.style.backgroundImage = 'url("images/character_icon/jaspis.png")';
         postaćPoz9 = Jaspis;
         postaćPoz9.top = getComputedStyle(poz9).top;
         postaćPoz9.left = getComputedStyle(poz9).left;
     }else if(charSelect10.value === "0"){
-        charSelect10.value = "1";
-        charSelect10.style.backgroundColor = "goldenrod";
+        charSelect10.value = "9";
+        character9.value = "1";
+        charSelect10.style.backgroundImage = 'url("images/character_icon/jaspis.png")';
         postaćPoz10 = Jaspis;
         postaćPoz10.top = getComputedStyle(poz10).top;
         postaćPoz10.left = getComputedStyle(poz10).left;
     }
 });
 character10.addEventListener("click",() => {
+    if(character10.value === "1"){
+        return;
+    }
     if(charSelect1.value === "0"){
-        charSelect1.value = "1";
-        charSelect1.style.backgroundColor = "cadetblue";
+        charSelect1.value = "10";
+        character10.value = "1";
+        charSelect1.style.backgroundImage = 'url("images/character_icon/bizmut.png")';
         postaćPoz1 = Bizmut;
         postaćPoz1.top = getComputedStyle(poz1).top;
         postaćPoz1.left = getComputedStyle(poz1).left;
     }else if(charSelect2.value === "0"){
-        charSelect2.value = "1";
-        charSelect2.style.backgroundColor = "cadetblue";
+        charSelect2.value = "10";
+        character10.value = "1";
+        charSelect2.style.backgroundImage = 'url("images/character_icon/bizmut.png")';
         postaćPoz2 = Bizmut;
         postaćPoz2.top = getComputedStyle(poz2).top;
         postaćPoz2.left = getComputedStyle(poz2).left;
     }else if(charSelect3.value === "0"){
-        charSelect3.value = "1";
-        charSelect3.style.backgroundColor = "cadetblue";
+        charSelect3.value = "10";
+        character10.value = "1";
+        charSelect3.style.backgroundImage = 'url("images/character_icon/bizmut.png")';
         postaćPoz3 = Bizmut;
         postaćPoz3.top = getComputedStyle(poz3).top;
         postaćPoz3.left = getComputedStyle(poz3).left;
     }else if(charSelect4.value === "0"){
-        charSelect4.value = "1";
-        charSelect4.style.backgroundColor = "cadetblue";
+        charSelect4.value = "10";
+        character10.value = "1";
+        charSelect4.style.backgroundImage = 'url("images/character_icon/bizmut.png")';
         postaćPoz4 = Bizmut;
         postaćPoz4.top = getComputedStyle(poz4).top;
         postaćPoz4.left = getComputedStyle(poz4).left;
     }else if(charSelect5.value === "0"){
-        charSelect5.value = "1";
-        charSelect5.style.backgroundColor = "cadetblue";
+        charSelect5.value = "10";
+        character10.value = "1";
+        charSelect5.style.backgroundImage = 'url("images/character_icon/bizmut.png")';
         postaćPoz5 = Bizmut;
         postaćPoz5.top = getComputedStyle(poz5).top;
         postaćPoz5.left = getComputedStyle(poz5).left;
     }else if(charSelect6.value === "0"){
-        charSelect6.value = "1";
-        charSelect6.style.backgroundColor = "cadetblue";
+        charSelect6.value = "10";
+        character10.value = "1";
+        charSelect6.style.backgroundImage = 'url("images/character_icon/bizmut.png")';
         postaćPoz6 = Bizmut;
         postaćPoz6.top = getComputedStyle(poz6).top;
         postaćPoz6.left = getComputedStyle(poz6).left;
     }else if(charSelect7.value === "0"){
-        charSelect7.value = "1";
-        charSelect7.style.backgroundColor = "cadetblue";
+        charSelect7.value = "10";
+        character10.value = "1";
+        charSelect7.style.backgroundImage = 'url("images/character_icon/bizmut.png")';
         postaćPoz7 = Bizmut;
         postaćPoz7.top = getComputedStyle(poz7).top;
         postaćPoz7.left = getComputedStyle(poz7).left;
     }else if(charSelect8.value === "0"){
-        charSelect8.value = "1";
-        charSelect8.style.backgroundColor = "cadetblue";
+        charSelect8.value = "10";
+        character10.value = "1";
+        charSelect8.style.backgroundImage = 'url("images/character_icon/bizmut.png")';
         postaćPoz8 = Bizmut;
         postaćPoz8.top = getComputedStyle(poz8).top;
         postaćPoz8.left = getComputedStyle(poz8).left;
     }else if(charSelect9.value === "0"){
-        charSelect9.value = "1";
-        charSelect9.style.backgroundColor = "cadetblue";
+        charSelect9.value = "10";
+        character10.value = "1";
+        charSelect9.style.backgroundImage = 'url("images/character_icon/bizmut.png")';
         postaćPoz9 = Bizmut;
         postaćPoz9.top = getComputedStyle(poz9).top;
         postaćPoz9.left = getComputedStyle(poz9).left;
     }else if(charSelect10.value === "0"){
-        charSelect10.value = "1";
-        charSelect10.style.backgroundColor = "cadetblue";
+        charSelect10.value = "10";
+        character10.value = "1";
+        charSelect10.style.backgroundImage = 'url("images/character_icon/bizmut.png")';
         postaćPoz10 = Bizmut;
         postaćPoz10.top = getComputedStyle(poz10).top;
         postaćPoz10.left = getComputedStyle(poz10).left;
@@ -1642,44 +1772,54 @@ character10.addEventListener("click",() => {
 });
 //cofnięcie postaci
 charSelect1.addEventListener("click", () => {
+    window[`character${charSelect1.value}`].value = "0";//window to jakby obiekt globalny, ale działa tak samo jak document.getElement
     charSelect1.value = "0";
-    charSelect1.style.background = "#444";
+    charSelect1.style.backgroundImage = "";
 });
 charSelect2.addEventListener("click", () => {
+    window[`character${charSelect2.value}`].value = "0";
     charSelect2.value = "0";
-    charSelect2.style.background = "#444";
+    charSelect2.style.backgroundImage = "";
 });
 charSelect3.addEventListener("click", () => {
+    window[`character${charSelect3.value}`].value = "0";
     charSelect3.value = "0";
-    charSelect3.style.background = "#444";
+    charSelect3.style.backgroundImage = "";
 });
 charSelect4.addEventListener("click", () => {
+    window[`character${charSelect4.value}`].value = "0";
     charSelect4.value = "0";
-    charSelect4.style.background = "#444";
+    charSelect4.style.backgroundImage = "";
 });
 charSelect5.addEventListener("click", () => {
+    window[`character${charSelect5.value}`].value = "0";
     charSelect5.value = "0";
-    charSelect5.style.background = "#444";
+    charSelect5.style.backgroundImage = "";
 });
 charSelect6.addEventListener("click", () => {
+    window[`character${charSelect6.value}`].value = "0";
     charSelect6.value = "0";
-    charSelect6.style.background = "#444";
+    charSelect6.style.backgroundImage = "";
 });
 charSelect7.addEventListener("click", () => {
+    window[`character${charSelect7.value}`].value = "0";
     charSelect7.value = "0";
-    charSelect7.style.background = "#444";
+    charSelect7.style.backgroundImage = "";
 });
 charSelect8.addEventListener("click", () => {
+    window[`character${charSelect8.value}`].value = "0";
     charSelect8.value = "0";
-    charSelect8.style.background = "#444";
+    charSelect8.style.backgroundImage = "";
 });
 charSelect9.addEventListener("click", () => {
+    window[`character${charSelect9.value}`].value = "0";
     charSelect9.value = "0";
-    charSelect9.style.background = "#444";
+    charSelect9.style.backgroundImage = "";
 });
 charSelect10.addEventListener("click", () => {
+    window[`character${charSelect10.value}`].value = "0";
     charSelect10.value = "0";
-    charSelect10.style.background = "#444";
+    charSelect10.style.backgroundImage = "";
 });
 //start gry
 document.getElementById("gameStart").addEventListener("click", () => {
