@@ -56,8 +56,8 @@ body {
   background-image: url("images/system_UI/arrow.jpg");
   background-size: cover;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 25px;
+  left: 25px;
   width: 50px;
   height: 50px;
   z-index:1;
@@ -114,16 +114,6 @@ body {
   cursor: pointer;
 }
 
-button {
-  padding: 10px 20px;
-  background: #444;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.2s;
-}
 button:hover {
   background: #666;
 }

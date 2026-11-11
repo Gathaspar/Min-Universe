@@ -5,60 +5,221 @@
   display: none;
   background-image: url("images/system_UI/menuTlo.png");
   background-size: cover;
-  width: 400px;
-  height: 600px;
+  width: 100vw;
+  height: 100vh;
 }
 
 #charScroll{
   position: absolute;
-  top:50px;
-  left:0px;
-  width:200px;
-  height:550px;
+  top:100px;
+  left:100px;
+  width:1000px;
+  height:700px;
   background-color: purple;
-}
-
-#charSrcollButtons{
-  background-color: blue;
   border: solid black 5px;
   border-radius: 5px;
-  margin: auto;
-  width: 180px;
+  overflow-y: scroll;
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  row-gap: 20px;
+  justify-items:center;
 }
 
-#charScrollButtons>button {
-  background: grey;
-  width: 45px;
-  height: 45px;
+#character1Info{
+  background-image: url("images/character_icon/steven.png");
+  background-size: cover;
+  width: 180px;
+  height: 180px;
   border: solid darkgrey 2px;
-  border-radius: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#character2Info{
+  background-image: url("images/character_icon/granat.png");
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  border: solid darkgrey 2px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#character3Info{
+  background-image: url("images/character_icon/ametyst.png");
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  border: solid darkgrey 2px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#character4Info{
+  background-image: url("images/character_icon/perła.png");
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  border: solid darkgrey 2px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#character5Info{
+  background-image: url("images/character_icon/greg.png");
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  border: solid darkgrey 2px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#character6Info{
+  background-image: url("images/character_icon/connie.png");
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  border: solid darkgrey 2px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#character7Info{
+  background-image: url("images/character_icon/lapis.png");
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  border: solid darkgrey 2px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#character8Info{
+  background-image: url("images/character_icon/perydot.png");
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  border: solid darkgrey 2px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#character9Info{
+  background-image: url("images/character_icon/jaspis.png");
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  border: solid darkgrey 2px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#character10Info{
+  background-image: url("images/character_icon/bizmut.png");
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  border: solid darkgrey 2px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#character11Info{
+  background-image: url("images/character_icon/steven.png");
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  border: solid darkgrey 2px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#character12Info{
+  background-image: url("images/character_icon/steven.png");
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  border: solid darkgrey 2px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#character13Info{
+  background-image: url("images/character_icon/steven.png");
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  border: solid darkgrey 2px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#character14Info{
+  background-image: url("images/character_icon/steven.png");
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  border: solid darkgrey 2px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#character15Info{
+  background-image: url("images/character_icon/steven.png");
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  border: solid darkgrey 2px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#character16Info{
+  background-image: url("images/character_icon/steven.png");
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  border: solid darkgrey 2px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#character17Info{
+  background-image: url("images/character_icon/steven.png");
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  border: solid darkgrey 2px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#character18Info{
+  background-image: url("images/character_icon/steven.png");
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  border: solid darkgrey 2px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#character19Info{
+  background-image: url("images/character_icon/steven.png");
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  border: solid darkgrey 2px;
+  border-radius: 25px;
   cursor: pointer;
 }
 
 #charInfo{
   position: absolute;
   top:50px;
-  left:200px;
-  width:200px;
-  height:550px;
+  left:1200px;
+  width:400px;
+  height:800px;
   background-color: bisque;
 }
 
 #charFace{
+  background-image: url("images/character_icon/steven.png");
+  background-size: cover;
   margin: auto;
-  width:180px;
-  height:180px;
+  width:400px;
+  height:400px;
   border: solid black 5px;
-  background-color: brown;
 }
 
 #charStats{
   margin: auto;
-  width:180px;
-  height:370px;
+  width:400px;
+  height:400px;
   border: solid black 5px;
   background-color: burlywood;
 }
