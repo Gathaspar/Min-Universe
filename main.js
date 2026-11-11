@@ -966,7 +966,7 @@ var charSelect8 = document.getElementById("charSelect8");
 var charSelect9 = document.getElementById("charSelect9");
 var charSelect10 = document.getElementById("charSelect10");
 
-var character1 = document.getElementById("character1");
+var character1 = document.getElementById("character1");//zrób wyświetlanie czy efektywne czy nie, czy kryt i zobacz z granat byl dziwny selffire, może pora zmienic system self
 character1.style.backgroundImage = 'url("images/character_icon/steven.png")';
 var character2 = document.getElementById("character2");
 character2.style.backgroundImage = 'url("images/character_icon/granat.png")';
